@@ -687,6 +687,17 @@
       "group_name": "virtualmachine"
     },
     {
+      "name": "DB2Node01_domain",
+      "type": "string",
+      "description": "Domain name of the virtual machine",
+      "hidden": false,
+      "label": "Domain name - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "virtualmachine"
+    },
+    {
       "name": "DB2Node01_root_disk_keep_on_remove",
       "type": "string",
       "description": "Delete template disk volume when the virtual machine is deleted",

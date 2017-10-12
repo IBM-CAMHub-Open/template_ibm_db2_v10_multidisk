@@ -1,9 +1,9 @@
-# Template - IBM DB2 ESE 10.5 multiple disks on a single VM
+# Template - IBM DB2 Enterprise Server Edition V10.5 multiple disks on a single virtual machine
 Template Version - 1.0
 
 ## Description
 
-This template deploys IBM DB2 Enterprise Server Edition 10.5 on a Linux virtual machine.<br>
+This template deploys IBM DB2 Enterprise Server Edition V10.5 on a Linux virtual machine.<br>
 
 ## Features
 
@@ -24,12 +24,12 @@ Ubuntu 14.04 LTS<br>
 ### Topology
 
 1 virtual machine:<br>
-  IBM DB2 ESE 10.5<br>
+  IBM DB2 Enterprise Server Edition V10.5<br>
     db2 instance 1, 1 database<br>
 <br>
 ### Software Deployed
 
-IBM DB2 Enterprise Server Edition 10.5<br>
+IBM DB2 Enterprise Server Edition V10.5<br>
 <br>
 ### Default Virtual Machine Settings
 
@@ -38,8 +38,8 @@ IBM DB2 Enterprise Server Edition 10.5<br>
 ### Usage and Special Notes
 
 1. The user is responsible for obtaining appropriate software licenses and downloads prior to template deployment.<br>
-2. Detailed system requirements for DB2 10.5 - <a href=\"https://www.ibm.com/software/reports/compatibility/clarity/index.html\" target=\"_blank\">https://www.ibm.com/software/reports/compatibility/clarity/index.html</a><br>
-3. IBM Knowledge Center for DB2 10.5 - <a href=\"https://www.ibm.com/support/knowledgecenter/en/SSEPGG_10.5.0\" target=\"_blank\">https://www.ibm.com/support/knowledgecenter/en/SSEPGG_10.5.0</a><br>
+2. Detailed system requirements for DB2 V10.5 - <a href=\"https://www.ibm.com/software/reports/compatibility/clarity/index.html\" target=\"_blank\">https://www.ibm.com/software/reports/compatibility/clarity/index.html</a><br>
+3. IBM Knowledge Center for DB2 V10.5 - <a href=\"https://www.ibm.com/support/knowledgecenter/en/SSEPGG_10.5.0\" target=\"_blank\">https://www.ibm.com/support/knowledgecenter/en/SSEPGG_10.5.0</a><br>
 4. IBM Support Portal - <a href=\"https://www.ibm.com/support/home/\" target=\"_blank\">https://www.ibm.com/support/home/</a><br>
 <br>
 
