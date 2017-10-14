@@ -665,6 +665,486 @@
       "group_name": "db2node01"
     },
     {
+      "name": "DB2Node01_linux_filesystems_filesystem1_size",
+      "type": "string",
+      "description": "Size in GB of the disk",
+      "default": "10",
+      "hidden": false,
+      "label": "Disk 1 size - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem1_label",
+      "type": "string",
+      "description": "Label of the file system",
+      "default": "instance",
+      "hidden": false,
+      "label": "Disk 1 label - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem1_mountpoint",
+      "type": "string",
+      "description": "Directory to mount to, directory will be created",
+      "default": "/instance",
+      "hidden": false,
+      "label": "Disk 1 mountpoint - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem1_device",
+      "type": "string",
+      "description": "Device to mount to, leave blank if unknown, the system will search for it.",
+      "default": "/dev/xvdc",
+      "hidden": false,
+      "label": "Disk 1 device - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem1_fstype",
+      "type": "string",
+      "description": "File System Type",
+      "default": "ext4",
+      "hidden": false,
+      "label": "Disk 1 fstype - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem1_options",
+      "type": "string",
+      "description": "Advanced options for mounting the disk",
+      "default": "defaults",
+      "hidden": false,
+      "label": "Disk 1 options - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem1_perms",
+      "type": "string",
+      "description": "Permissions for the mount point.",
+      "default": "default",
+      "hidden": false,
+      "label": "Disk 1 perms - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem1_force",
+      "type": "string",
+      "description": "Force the mount true or false",
+      "default": "true",
+      "hidden": false,
+      "label": "Disk 1 force - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem1_user",
+      "type": "string",
+      "description": "Owner of the mount point.",
+      "default": "default",
+      "hidden": false,
+      "label": "Disk 1 user - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem1_group",
+      "type": "string",
+      "description": "Group owner of the mount point",
+      "default": "default",
+      "hidden": false,
+      "label": "Disk 1 group - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem2_size",
+      "type": "string",
+      "description": "Size in GB of the disk",
+      "default": "40",
+      "hidden": false,
+      "label": "Disk 2 size - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem2_label",
+      "type": "string",
+      "description": "Label of the file system",
+      "default": "data",
+      "hidden": false,
+      "label": "Disk 2 label - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem2_mountpoint",
+      "type": "string",
+      "description": "Directory to mount to, directory will be created",
+      "default": "/database/data",
+      "hidden": false,
+      "label": "Disk 2 mountpoint - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem2_device",
+      "type": "string",
+      "description": "Device to mount to, leave blank if unknown, the system will search for it.",
+      "default": "/dev/xvdd",
+      "hidden": false,
+      "label": "Disk 2 device - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem2_fstype",
+      "type": "string",
+      "description": "File System Type",
+      "default": "ext4",
+      "hidden": false,
+      "label": "Disk 2 fstype - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem2_options",
+      "type": "string",
+      "description": "Advanced options for mounting the disk",
+      "default": "defaults",
+      "hidden": false,
+      "label": "Disk 2 options - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem2_perms",
+      "type": "string",
+      "description": "Permissions for the mount point.",
+      "default": "default",
+      "hidden": false,
+      "label": "Disk 2 perms - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem2_force",
+      "type": "string",
+      "description": "Force the mount true or false",
+      "default": "true",
+      "hidden": false,
+      "label": "Disk 2 force - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem2_user",
+      "type": "string",
+      "description": "Owner of the mount point.",
+      "default": "default",
+      "hidden": false,
+      "label": "Disk 2 user - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem2_group",
+      "type": "string",
+      "description": "Group owner of the mount point",
+      "default": "default",
+      "hidden": false,
+      "label": "Disk 2 group - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem3_size",
+      "type": "string",
+      "description": "Size in GB of the disk",
+      "default": "10",
+      "hidden": false,
+      "label": "Disk 3 size - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem3_label",
+      "type": "string",
+      "description": "Label of the file system",
+      "default": "actlog",
+      "hidden": false,
+      "label": "Disk 3 label - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem3_mountpoint",
+      "type": "string",
+      "description": "Directory to mount to, directory will be created",
+      "default": "/database/actlog",
+      "hidden": false,
+      "label": "Disk 3 mountpoint - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem3_device",
+      "type": "string",
+      "description": "Device to mount to, leave blank if unknown, the system will search for it.",
+      "default": "/dev/xvde",
+      "hidden": false,
+      "label": "Disk 3 device - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem3_fstype",
+      "type": "string",
+      "description": "File System Type",
+      "default": "ext4",
+      "hidden": false,
+      "label": "fstype - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem3_options",
+      "type": "string",
+      "description": "Advanced options for mounting the disk",
+      "default": "defaults",
+      "hidden": false,
+      "label": "Disk 3 options - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem3_perms",
+      "type": "string",
+      "description": "Permissions for the mount point.",
+      "default": "default",
+      "hidden": false,
+      "label": "Disk 3 perms - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem3_force",
+      "type": "string",
+      "description": "Force the mount true or false",
+      "default": "true",
+      "hidden": false,
+      "label": "Disk 3 force - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem3_user",
+      "type": "string",
+      "description": "Owner of the mount point.",
+      "default": "default",
+      "hidden": false,
+      "label": "user - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem3_group",
+      "type": "string",
+      "description": "Group owner of the mount point",
+      "default": "default",
+      "hidden": false,
+      "label": "Disk 3 group - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem4_size",
+      "type": "string",
+      "description": "Size in GB of the disk",
+      "default": "20",
+      "hidden": false,
+      "label": "Disk 4 size - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem4_label",
+      "type": "string",
+      "description": "Label of the file system",
+      "default": "archive",
+      "hidden": false,
+      "label": "Disk 4 label - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem4_mountpoint",
+      "type": "string",
+      "description": "Directory to mount to, directory will be created",
+      "default": "/database/archive",
+      "hidden": false,
+      "label": "Disk 4 mountpoint - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem4_device",
+      "type": "string",
+      "description": "Device to mount to, leave blank if unknown, the system will search for it.",
+      "default": "/dev/xvdf",
+      "hidden": false,
+      "label": "Disk 4 device - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem4_fstype",
+      "type": "string",
+      "description": "File System Type",
+      "default": "ext4",
+      "hidden": false,
+      "label": "Disk 4 fstype - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem4_options",
+      "type": "string",
+      "description": "Advanced options for mounting the disk",
+      "default": "defaults",
+      "hidden": false,
+      "label": "Disk 4 options - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem4_perms",
+      "type": "string",
+      "description": "Permissions for the mount point.",
+      "default": "default",
+      "hidden": false,
+      "label": "Disk 4 perms - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem4_force",
+      "type": "string",
+      "description": "Force the mount true or false",
+      "default": "true",
+      "hidden": false,
+      "label": "Disk 4 force - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem4_user",
+      "type": "string",
+      "description": "Owner of the mount point.",
+      "default": "default",
+      "hidden": false,
+      "label": "Disk 4 user - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem4_group",
+      "type": "string",
+      "description": "Group owner of the mount point",
+      "default": "default",
+      "hidden": false,
+      "label": "Disk 4 group - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "db2node01"
+    },
+    {
       "name": "DB2Node01_dns_servers",
       "type": "list",
       "description": "DNS servers for the virtual network adapter",
@@ -718,490 +1198,6 @@
       "required": true,
       "immutable": false,
       "group_name": "virtualmachine"
-    },
-    {
-      "name": "storage-volume3_disk_controller_type",
-      "type": "string",
-      "description": "Disk Controller Type - DB2Node01",
-      "hidden": false,
-      "label": "Disk Controller Type - DB2Node01",
-      "secured": false,
-      "options": [
-        {
-          "value": "scsi",
-          "label": "scsi",
-          "default": "true"
-        },
-        {
-          "value": "scsi-lsi-parallel",
-          "label": "scsi-lsi-parallel"
-        },
-        {
-          "value": "scsi-buslogic",
-          "label": "scsi-buslogic"
-        },
-        {
-          "value": "scsi-paravirtual",
-          "label": "scsi-paravirtual"
-        },
-        {
-          "value": "scsi-isi-sas",
-          "label": "scsi-isi-sas"
-        },
-        {
-          "value": "ide",
-          "label": "ide"
-        }
-      ],
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "storage-volume2_disk_controller_type",
-      "type": "string",
-      "description": "Disk Controller Type - DB2Node01",
-      "hidden": false,
-      "label": "Disk Controller Type - DB2Node01",
-      "secured": false,
-      "options": [
-        {
-          "value": "scsi",
-          "label": "scsi",
-          "default": "true"
-        },
-        {
-          "value": "scsi-lsi-parallel",
-          "label": "scsi-lsi-parallel"
-        },
-        {
-          "value": "scsi-buslogic",
-          "label": "scsi-buslogic"
-        },
-        {
-          "value": "scsi-paravirtual",
-          "label": "scsi-paravirtual"
-        },
-        {
-          "value": "scsi-isi-sas",
-          "label": "scsi-isi-sas"
-        },
-        {
-          "value": "ide",
-          "label": "ide"
-        }
-      ],
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "storage-volume_disk_controller_type",
-      "type": "string",
-      "description": "Disk Controller Type - DB2Node01",
-      "hidden": false,
-      "label": "Disk Controller Type - DB2Node01",
-      "secured": false,
-      "options": [
-        {
-          "value": "scsi",
-          "label": "scsi",
-          "default": "true"
-        },
-        {
-          "value": "scsi-lsi-parallel",
-          "label": "scsi-lsi-parallel"
-        },
-        {
-          "value": "scsi-buslogic",
-          "label": "scsi-buslogic"
-        },
-        {
-          "value": "scsi-paravirtual",
-          "label": "scsi-paravirtual"
-        },
-        {
-          "value": "scsi-isi-sas",
-          "label": "scsi-isi-sas"
-        },
-        {
-          "value": "ide",
-          "label": "ide"
-        }
-      ],
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "storage-volume1_disk_controller_type",
-      "type": "string",
-      "description": "Disk Controller Type - DB2Node01",
-      "hidden": false,
-      "label": "Disk Controller Type - DB2Node01",
-      "secured": false,
-      "options": [
-        {
-          "value": "scsi",
-          "label": "scsi",
-          "default": "true"
-        },
-        {
-          "value": "scsi-lsi-parallel",
-          "label": "scsi-lsi-parallel"
-        },
-        {
-          "value": "scsi-buslogic",
-          "label": "scsi-buslogic"
-        },
-        {
-          "value": "scsi-paravirtual",
-          "label": "scsi-paravirtual"
-        },
-        {
-          "value": "scsi-isi-sas",
-          "label": "scsi-isi-sas"
-        },
-        {
-          "value": "ide",
-          "label": "ide"
-        }
-      ],
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "storage-volume_disk_datastore",
-      "type": "string",
-      "description": "Disk Datastore - DB2Node01",
-      "hidden": false,
-      "label": "Disk Datastore - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "virtualmachine"
-    },
-    {
-      "name": "storage-volume1_disk_datastore",
-      "type": "string",
-      "description": "Disk Datastore - DB2Node01",
-      "hidden": false,
-      "label": "Disk Datastore - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "virtualmachine"
-    },
-    {
-      "name": "storage-volume3_disk_datastore",
-      "type": "string",
-      "description": "Disk Datastore - DB2Node01",
-      "hidden": false,
-      "label": "Disk Datastore - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "virtualmachine"
-    },
-    {
-      "name": "storage-volume2_disk_datastore",
-      "type": "string",
-      "description": "Disk Datastore - DB2Node01",
-      "hidden": false,
-      "label": "Disk Datastore - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "virtualmachine"
-    },
-    {
-      "name": "storage-volume3_disk_keep_on_remove",
-      "type": "string",
-      "description": "Disk Keep On Remove - DB2Node01",
-      "hidden": false,
-      "label": "Disk Keep On Remove - DB2Node01",
-      "secured": false,
-      "options": [
-        {
-          "value": "false",
-          "label": "False",
-          "default": "false"
-        },
-        {
-          "value": "true",
-          "label": "True"
-        }
-      ],
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "storage-volume1_disk_keep_on_remove",
-      "type": "string",
-      "description": "Disk Keep On Remove - DB2Node01",
-      "hidden": false,
-      "label": "Disk Keep On Remove - DB2Node01",
-      "secured": false,
-      "options": [
-        {
-          "value": "false",
-          "label": "False",
-          "default": "false"
-        },
-        {
-          "value": "true",
-          "label": "True"
-        }
-      ],
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "storage-volume2_disk_keep_on_remove",
-      "type": "string",
-      "description": "Disk Keep On Remove - DB2Node01",
-      "hidden": false,
-      "label": "Disk Keep On Remove - DB2Node01",
-      "secured": false,
-      "options": [
-        {
-          "value": "false",
-          "label": "False",
-          "default": "false"
-        },
-        {
-          "value": "true",
-          "label": "True"
-        }
-      ],
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "storage-volume_disk_keep_on_remove",
-      "type": "string",
-      "description": "Disk Keep On Remove - DB2Node01",
-      "hidden": false,
-      "label": "Disk Keep On Remove - DB2Node01",
-      "secured": false,
-      "options": [
-        {
-          "value": "false",
-          "label": "False",
-          "default": "false"
-        },
-        {
-          "value": "true",
-          "label": "True"
-        }
-      ],
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "storage-volume_disk_name",
-      "type": "string",
-      "description": "Disk Name - DB2Node01",
-      "default": "disk1",
-      "hidden": false,
-      "label": "Disk Name - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "storage-volume2_disk_name",
-      "type": "string",
-      "description": "Disk Name - DB2Node01",
-      "default": "disk3",
-      "hidden": false,
-      "label": "Disk Name - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "storage-volume3_disk_name",
-      "type": "string",
-      "description": "Disk Name - DB2Node01",
-      "default": "disk4",
-      "hidden": false,
-      "label": "Disk Name - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "storage-volume1_disk_name",
-      "type": "string",
-      "description": "Disk Name - DB2Node01",
-      "default": "disk2",
-      "hidden": false,
-      "label": "Disk Name - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "storage-volume_disk_size",
-      "type": "string",
-      "description": "Disk Volume Size - DB2Node01",
-      "default": 10,
-      "hidden": false,
-      "label": "Disk Volume Size - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "virtualmachine"
-    },
-    {
-      "name": "storage-volume1_disk_size",
-      "type": "string",
-      "description": "Disk Volume Size - DB2Node01",
-      "default": 40,
-      "hidden": false,
-      "label": "Disk Volume Size - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "virtualmachine"
-    },
-    {
-      "name": "storage-volume3_disk_size",
-      "type": "string",
-      "description": "Disk Volume Size - DB2Node01",
-      "default": 20,
-      "hidden": false,
-      "label": "Disk Volume Size - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "virtualmachine"
-    },
-    {
-      "name": "storage-volume2_disk_size",
-      "type": "string",
-      "description": "Disk Volume Size - DB2Node01",
-      "default": 10,
-      "hidden": false,
-      "label": "Disk Volume Size - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "virtualmachine"
-    },
-    {
-      "name": "storage-volume3_disk_type",
-      "type": "string",
-      "description": "Disk Volume Type - DB2Node01",
-      "hidden": false,
-      "label": "Disk Volume Type - DB2Node01",
-      "secured": false,
-      "options": [
-        {
-          "value": "eager_zeroed",
-          "label": "Thick Provision Eager Zeroed"
-        },
-        {
-          "value": "lazy",
-          "label": "Thick Provision Lazy Zeroed"
-        },
-        {
-          "value": "thin",
-          "default": "true",
-          "label": "Thin Provision"
-        }
-      ],
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "storage-volume_disk_type",
-      "type": "string",
-      "description": "Disk Volume Type - DB2Node01",
-      "hidden": false,
-      "label": "Disk Volume Type - DB2Node01",
-      "secured": false,
-      "options": [
-        {
-          "value": "eager_zeroed",
-          "label": "Thick Provision Eager Zeroed"
-        },
-        {
-          "value": "lazy",
-          "label": "Thick Provision Lazy Zeroed"
-        },
-        {
-          "value": "thin",
-          "default": "true",
-          "label": "Thin Provision"
-        }
-      ],
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "storage-volume1_disk_type",
-      "type": "string",
-      "description": "Disk Volume Type - DB2Node01",
-      "hidden": false,
-      "label": "Disk Volume Type - DB2Node01",
-      "secured": false,
-      "options": [
-        {
-          "value": "eager_zeroed",
-          "label": "Thick Provision Eager Zeroed"
-        },
-        {
-          "value": "lazy",
-          "label": "Thick Provision Lazy Zeroed"
-        },
-        {
-          "value": "thin",
-          "default": "true",
-          "label": "Thin Provision"
-        }
-      ],
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "storage-volume2_disk_type",
-      "type": "string",
-      "description": "Disk Volume Type - DB2Node01",
-      "hidden": false,
-      "label": "Disk Volume Type - DB2Node01",
-      "secured": false,
-      "options": [
-        {
-          "value": "eager_zeroed",
-          "label": "Thick Provision Eager Zeroed"
-        },
-        {
-          "value": "lazy",
-          "label": "Thick Provision Lazy Zeroed"
-        },
-        {
-          "value": "thin",
-          "default": "true",
-          "label": "Thin Provision"
-        }
-      ],
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
     },
     {
       "name": "ibm_pm_access_token",
@@ -1476,484 +1472,488 @@
       "group_name": "virtualmachine"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem1_device",
+      "name": "storage-volume_disk_name",
       "type": "string",
-      "description": "Device to mount to, leave blank if unknown, the system will search for it.",
-      "default": "/dev/xvdc",
+      "description": "Disk 1 Name - DB2Node01",
+      "default": "disk1",
       "hidden": false,
-      "label": "device - DB2Node01",
+      "label": "Disk 1 Name - DB2Node01",
       "secured": false,
       "required": true,
       "immutable": false,
-      "group_name": "db2node01"
+      "group_name": "virtualmachine"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem3_device",
+      "name": "storage-volume_disk_size",
       "type": "string",
-      "description": "Device to mount to, leave blank if unknown, the system will search for it.",
-      "default": "/dev/xvde",
+      "description": "Disk 1 Volume Size - DB2Node01",
+      "default": 10,
       "hidden": false,
-      "label": "device - DB2Node01",
+      "label": "Disk 1 Volume Size - DB2Node01",
       "secured": false,
       "required": true,
       "immutable": false,
-      "group_name": "db2node01"
+      "group_name": "virtualmachine"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem2_device",
+      "name": "storage-volume_disk_type",
       "type": "string",
-      "description": "Device to mount to, leave blank if unknown, the system will search for it.",
-      "default": "/dev/xvdd",
+      "description": "Disk 1 Volume Type - DB2Node01",
       "hidden": false,
-      "label": "device - DB2Node01",
+      "label": "Disk 1 Volume Type - DB2Node01",
       "secured": false,
+      "options": [
+        {
+          "value": "eager_zeroed",
+          "default": "true",
+          "label": "Thick Provision Eager Zeroed"
+        },
+        {
+          "value": "lazy",
+          "label": "Thick Provision Lazy Zeroed"
+        },
+        {
+          "value": "thin",
+          "label": "Thin Provision"
+        }
+      ],
       "required": true,
       "immutable": false,
-      "group_name": "db2node01"
+      "group_name": "virtualmachine"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem4_device",
+      "name": "storage-volume_disk_controller_type",
       "type": "string",
-      "description": "Device to mount to, leave blank if unknown, the system will search for it.",
-      "default": "/dev/xvdf",
+      "description": "Disk 1 Controller Type - DB2Node01",
       "hidden": false,
-      "label": "device - DB2Node01",
+      "label": "Disk 1 Controller Type - DB2Node01",
       "secured": false,
+      "options": [
+        {
+          "value": "scsi",
+          "label": "scsi",
+          "default": "true"
+        },
+        {
+          "value": "scsi-lsi-parallel",
+          "label": "scsi-lsi-parallel"
+        },
+        {
+          "value": "scsi-buslogic",
+          "label": "scsi-buslogic"
+        },
+        {
+          "value": "scsi-paravirtual",
+          "label": "scsi-paravirtual"
+        },
+        {
+          "value": "scsi-isi-sas",
+          "label": "scsi-isi-sas"
+        },
+        {
+          "value": "ide",
+          "label": "ide"
+        }
+      ],
       "required": true,
       "immutable": false,
-      "group_name": "db2node01"
+      "group_name": "virtualmachine"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem2_force",
+      "name": "storage-volume_disk_datastore",
       "type": "string",
-      "description": "Force the mount true or false",
-      "default": "true",
+      "description": "Disk 1 Datastore - DB2Node01",
       "hidden": false,
-      "label": "force - DB2Node01",
+      "label": "Disk 1 Datastore - DB2Node01",
       "secured": false,
       "required": true,
       "immutable": false,
-      "group_name": "db2node01"
+      "group_name": "virtualmachine"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem1_force",
+      "name": "storage-volume_disk_keep_on_remove",
       "type": "string",
-      "description": "Force the mount true or false",
-      "default": "true",
+      "description": "Disk 1 Keep On Remove - DB2Node01",
       "hidden": false,
-      "label": "force - DB2Node01",
+      "label": "Disk 1 Keep On Remove - DB2Node01",
       "secured": false,
+      "options": [
+        {
+          "value": "false",
+          "label": "False",
+          "default": "false"
+        },
+        {
+          "value": "true",
+          "label": "True"
+        }
+      ],
       "required": true,
       "immutable": false,
-      "group_name": "db2node01"
+      "group_name": "virtualmachine"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem4_force",
+      "name": "storage-volume1_disk_name",
       "type": "string",
-      "description": "Force the mount true or false",
-      "default": "true",
+      "description": "Disk 2 Name - DB2Node01",
+      "default": "disk2",
       "hidden": false,
-      "label": "force - DB2Node01",
+      "label": "Disk 2 Name - DB2Node01",
       "secured": false,
       "required": true,
       "immutable": false,
-      "group_name": "db2node01"
+      "group_name": "virtualmachine"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem3_force",
+      "name": "storage-volume1_disk_size",
       "type": "string",
-      "description": "Force the mount true or false",
-      "default": "true",
+      "description": "Disk 2 Volume Size - DB2Node01",
+      "default": 40,
       "hidden": false,
-      "label": "force - DB2Node01",
+      "label": "Disk 2 Volume Size - DB2Node01",
       "secured": false,
       "required": true,
       "immutable": false,
-      "group_name": "db2node01"
+      "group_name": "virtualmachine"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem3_fstype",
+      "name": "storage-volume1_disk_type",
       "type": "string",
-      "description": "File System Type",
-      "default": "ext4",
+      "description": "Disk 2 Volume Type - DB2Node01",
       "hidden": false,
-      "label": "fstype - DB2Node01",
+      "label": "Disk 2 Volume Type - DB2Node01",
       "secured": false,
+      "options": [
+        {
+          "value": "eager_zeroed",
+          "default": "true",
+          "label": "Thick Provision Eager Zeroed"
+        },
+        {
+          "value": "lazy",
+          "label": "Thick Provision Lazy Zeroed"
+        },
+        {
+          "value": "thin",
+          "label": "Thin Provision"
+        }
+      ],
       "required": true,
       "immutable": false,
-      "group_name": "db2node01"
+      "group_name": "virtualmachine"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem2_fstype",
+      "name": "storage-volume1_disk_controller_type",
       "type": "string",
-      "description": "File System Type",
-      "default": "ext4",
+      "description": "Disk 2 Controller Type - DB2Node01",
       "hidden": false,
-      "label": "fstype - DB2Node01",
+      "label": "Disk 2 Controller Type - DB2Node01",
       "secured": false,
+      "options": [
+        {
+          "value": "scsi",
+          "label": "scsi",
+          "default": "true"
+        },
+        {
+          "value": "scsi-lsi-parallel",
+          "label": "scsi-lsi-parallel"
+        },
+        {
+          "value": "scsi-buslogic",
+          "label": "scsi-buslogic"
+        },
+        {
+          "value": "scsi-paravirtual",
+          "label": "scsi-paravirtual"
+        },
+        {
+          "value": "scsi-isi-sas",
+          "label": "scsi-isi-sas"
+        },
+        {
+          "value": "ide",
+          "label": "ide"
+        }
+      ],
       "required": true,
       "immutable": false,
-      "group_name": "db2node01"
+      "group_name": "virtualmachine"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem1_fstype",
+      "name": "storage-volume1_disk_datastore",
       "type": "string",
-      "description": "File System Type",
-      "default": "ext4",
+      "description": "Disk 2 Datastore - DB2Node01",
       "hidden": false,
-      "label": "fstype - DB2Node01",
+      "label": "Disk 2 Datastore - DB2Node01",
       "secured": false,
       "required": true,
       "immutable": false,
-      "group_name": "db2node01"
+      "group_name": "virtualmachine"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem4_fstype",
+      "name": "storage-volume1_disk_keep_on_remove",
       "type": "string",
-      "description": "File System Type",
-      "default": "ext4",
+      "description": "Disk 2 Keep On Remove - DB2Node01",
       "hidden": false,
-      "label": "fstype - DB2Node01",
+      "label": "Disk 2 Keep On Remove - DB2Node01",
       "secured": false,
+      "options": [
+        {
+          "value": "false",
+          "label": "False",
+          "default": "false"
+        },
+        {
+          "value": "true",
+          "label": "True"
+        }
+      ],
       "required": true,
       "immutable": false,
-      "group_name": "db2node01"
+      "group_name": "virtualmachine"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem1_group",
+      "name": "storage-volume2_disk_name",
       "type": "string",
-      "description": "Group owner of the mount point",
-      "default": "default",
+      "description": "Disk 3 Name - DB2Node01",
+      "default": "disk3",
       "hidden": false,
-      "label": "group - DB2Node01",
+      "label": "Disk 3 Name - DB2Node01",
       "secured": false,
       "required": true,
       "immutable": false,
-      "group_name": "db2node01"
+      "group_name": "virtualmachine"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem2_group",
+      "name": "storage-volume2_disk_size",
       "type": "string",
-      "description": "Group owner of the mount point",
-      "default": "default",
+      "description": "Disk 3 Volume Size - DB2Node01",
+      "default": 10,
       "hidden": false,
-      "label": "group - DB2Node01",
+      "label": "Disk 3 Volume Size - DB2Node01",
       "secured": false,
       "required": true,
       "immutable": false,
-      "group_name": "db2node01"
+      "group_name": "virtualmachine"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem4_group",
+      "name": "storage-volume2_disk_type",
       "type": "string",
-      "description": "Group owner of the mount point",
-      "default": "default",
+      "description": "Disk 3 Volume Type - DB2Node01",
       "hidden": false,
-      "label": "group - DB2Node01",
+      "label": "Disk 3 Volume Type - DB2Node01",
       "secured": false,
+      "options": [
+        {
+          "value": "eager_zeroed",
+          "default": "true",
+          "label": "Thick Provision Eager Zeroed"
+        },
+        {
+          "value": "lazy",
+          "label": "Thick Provision Lazy Zeroed"
+        },
+        {
+          "value": "thin",
+          "label": "Thin Provision"
+        }
+      ],
       "required": true,
       "immutable": false,
-      "group_name": "db2node01"
+      "group_name": "virtualmachine"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem3_group",
+      "name": "storage-volume2_disk_controller_type",
       "type": "string",
-      "description": "Group owner of the mount point",
-      "default": "default",
+      "description": "Disk 3 Controller Type - DB2Node01",
       "hidden": false,
-      "label": "group - DB2Node01",
+      "label": "Disk 3 Controller Type - DB2Node01",
       "secured": false,
+      "options": [
+        {
+          "value": "scsi",
+          "label": "scsi",
+          "default": "true"
+        },
+        {
+          "value": "scsi-lsi-parallel",
+          "label": "scsi-lsi-parallel"
+        },
+        {
+          "value": "scsi-buslogic",
+          "label": "scsi-buslogic"
+        },
+        {
+          "value": "scsi-paravirtual",
+          "label": "scsi-paravirtual"
+        },
+        {
+          "value": "scsi-isi-sas",
+          "label": "scsi-isi-sas"
+        },
+        {
+          "value": "ide",
+          "label": "ide"
+        }
+      ],
       "required": true,
       "immutable": false,
-      "group_name": "db2node01"
+      "group_name": "virtualmachine"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem4_label",
+      "name": "storage-volume2_disk_datastore",
       "type": "string",
-      "description": "Label of the file system",
-      "default": "archive",
+      "description": "Disk 3 Datastore - DB2Node01",
       "hidden": false,
-      "label": "label - DB2Node01",
+      "label": "Disk 3 Datastore - DB2Node01",
       "secured": false,
       "required": true,
       "immutable": false,
-      "group_name": "db2node01"
+      "group_name": "virtualmachine"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem1_label",
+      "name": "storage-volume2_disk_keep_on_remove",
       "type": "string",
-      "description": "Label of the file system",
-      "default": "instance",
+      "description": "Disk 3 Keep On Remove - DB2Node01",
       "hidden": false,
-      "label": "label - DB2Node01",
+      "label": "Disk 3 Keep On Remove - DB2Node01",
       "secured": false,
+      "options": [
+        {
+          "value": "false",
+          "label": "False",
+          "default": "false"
+        },
+        {
+          "value": "true",
+          "label": "True"
+        }
+      ],
       "required": true,
       "immutable": false,
-      "group_name": "db2node01"
+      "group_name": "virtualmachine"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem2_label",
+      "name": "storage-volume3_disk_name",
       "type": "string",
-      "description": "Label of the file system",
-      "default": "data",
+      "description": "Disk 4 Name - DB2Node01",
+      "default": "disk4",
       "hidden": false,
-      "label": "label - DB2Node01",
+      "label": "Disk 4 Name - DB2Node01",
       "secured": false,
       "required": true,
       "immutable": false,
-      "group_name": "db2node01"
+      "group_name": "virtualmachine"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem3_label",
+      "name": "storage-volume3_disk_size",
       "type": "string",
-      "description": "Label of the file system",
-      "default": "actlog",
+      "description": "Disk 4 Volume Size - DB2Node01",
+      "default": 20,
       "hidden": false,
-      "label": "label - DB2Node01",
+      "label": "Disk 4 Volume Size - DB2Node01",
       "secured": false,
       "required": true,
       "immutable": false,
-      "group_name": "db2node01"
+      "group_name": "virtualmachine"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem2_mountpoint",
+      "name": "storage-volume3_disk_type",
       "type": "string",
-      "description": "Directory to mount to, directory will be created",
-      "default": "/database/data",
+      "description": "Disk 4 Volume Type - DB2Node01",
       "hidden": false,
-      "label": "mountpoint - DB2Node01",
+      "label": "Disk 4 Volume Type - DB2Node01",
       "secured": false,
+      "options": [
+        {
+          "value": "eager_zeroed",
+          "default": "true",
+          "label": "Thick Provision Eager Zeroed"
+        },
+        {
+          "value": "lazy",
+          "label": "Thick Provision Lazy Zeroed"
+        },
+        {
+          "value": "thin",
+          "label": "Thin Provision"
+        }
+      ],
       "required": true,
       "immutable": false,
-      "group_name": "db2node01"
+      "group_name": "virtualmachine"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem3_mountpoint",
+      "name": "storage-volume3_disk_controller_type",
       "type": "string",
-      "description": "Directory to mount to, directory will be created",
-      "default": "/database/actlog",
+      "description": "Disk 4 Controller Type - DB2Node01",
       "hidden": false,
-      "label": "mountpoint - DB2Node01",
+      "label": "Disk 4 Controller Type - DB2Node01",
       "secured": false,
+      "options": [
+        {
+          "value": "scsi",
+          "label": "scsi",
+          "default": "true"
+        },
+        {
+          "value": "scsi-lsi-parallel",
+          "label": "scsi-lsi-parallel"
+        },
+        {
+          "value": "scsi-buslogic",
+          "label": "scsi-buslogic"
+        },
+        {
+          "value": "scsi-paravirtual",
+          "label": "scsi-paravirtual"
+        },
+        {
+          "value": "scsi-isi-sas",
+          "label": "scsi-isi-sas"
+        },
+        {
+          "value": "ide",
+          "label": "ide"
+        }
+      ],
       "required": true,
       "immutable": false,
-      "group_name": "db2node01"
+      "group_name": "virtualmachine"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem1_mountpoint",
+      "name": "storage-volume3_disk_datastore",
       "type": "string",
-      "description": "Directory to mount to, directory will be created",
-      "default": "/instance",
+      "description": "Disk 4 Datastore - DB2Node01",
       "hidden": false,
-      "label": "mountpoint - DB2Node01",
+      "label": "Disk 4 Datastore - DB2Node01",
       "secured": false,
       "required": true,
       "immutable": false,
-      "group_name": "db2node01"
+      "group_name": "virtualmachine"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem4_mountpoint",
+      "name": "storage-volume3_disk_keep_on_remove",
       "type": "string",
-      "description": "Directory to mount to, directory will be created",
-      "default": "/database/archive",
+      "description": "Disk 4 Keep On Remove - DB2Node01",
       "hidden": false,
-      "label": "mountpoint - DB2Node01",
+      "label": "Disk 4 Keep On Remove - DB2Node01",
       "secured": false,
+      "options": [
+        {
+          "value": "false",
+          "label": "False",
+          "default": "false"
+        },
+        {
+          "value": "true",
+          "label": "True"
+        }
+      ],
       "required": true,
       "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "DB2Node01_linux_filesystems_filesystem4_options",
-      "type": "string",
-      "description": "Advanced options for mounting the disk",
-      "default": "defaults",
-      "hidden": false,
-      "label": "options - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "DB2Node01_linux_filesystems_filesystem1_options",
-      "type": "string",
-      "description": "Advanced options for mounting the disk",
-      "default": "defaults",
-      "hidden": false,
-      "label": "options - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "DB2Node01_linux_filesystems_filesystem2_options",
-      "type": "string",
-      "description": "Advanced options for mounting the disk",
-      "default": "defaults",
-      "hidden": false,
-      "label": "options - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "DB2Node01_linux_filesystems_filesystem3_options",
-      "type": "string",
-      "description": "Advanced options for mounting the disk",
-      "default": "defaults",
-      "hidden": false,
-      "label": "options - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "DB2Node01_linux_filesystems_filesystem3_perms",
-      "type": "string",
-      "description": "Permissions for the mount point.",
-      "default": "default",
-      "hidden": false,
-      "label": "perms - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "DB2Node01_linux_filesystems_filesystem4_perms",
-      "type": "string",
-      "description": "Permissions for the mount point.",
-      "default": "default",
-      "hidden": false,
-      "label": "perms - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "DB2Node01_linux_filesystems_filesystem1_perms",
-      "type": "string",
-      "description": "Permissions for the mount point.",
-      "default": "default",
-      "hidden": false,
-      "label": "perms - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "DB2Node01_linux_filesystems_filesystem2_perms",
-      "type": "string",
-      "description": "Permissions for the mount point.",
-      "default": "default",
-      "hidden": false,
-      "label": "perms - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "DB2Node01_linux_filesystems_filesystem4_size",
-      "type": "string",
-      "description": "Size in GB of the disk",
-      "default": "20",
-      "hidden": false,
-      "label": "size - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "DB2Node01_linux_filesystems_filesystem1_size",
-      "type": "string",
-      "description": "Size in GB of the disk",
-      "default": "10",
-      "hidden": false,
-      "label": "size - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "DB2Node01_linux_filesystems_filesystem2_size",
-      "type": "string",
-      "description": "Size in GB of the disk",
-      "default": "40",
-      "hidden": false,
-      "label": "size - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "DB2Node01_linux_filesystems_filesystem3_size",
-      "type": "string",
-      "description": "Size in GB of the disk",
-      "default": "10",
-      "hidden": false,
-      "label": "size - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "DB2Node01_linux_filesystems_filesystem3_user",
-      "type": "string",
-      "description": "Owner of the mount point.",
-      "default": "default",
-      "hidden": false,
-      "label": "user - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "DB2Node01_linux_filesystems_filesystem4_user",
-      "type": "string",
-      "description": "Owner of the mount point.",
-      "default": "default",
-      "hidden": false,
-      "label": "user - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "DB2Node01_linux_filesystems_filesystem1_user",
-      "type": "string",
-      "description": "Owner of the mount point.",
-      "default": "default",
-      "hidden": false,
-      "label": "user - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "DB2Node01_linux_filesystems_filesystem2_user",
-      "type": "string",
-      "description": "Owner of the mount point.",
-      "default": "default",
-      "hidden": false,
-      "label": "user - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "db2node01"
+      "group_name": "virtualmachine"
     },
     {
       "name": "DB2Node01_cluster",
