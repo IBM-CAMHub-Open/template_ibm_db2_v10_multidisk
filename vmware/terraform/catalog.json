@@ -1,7 +1,7 @@
 {
     "name": "IBM DB2 Enterprise Server Edition V10.5 multiple disks on a single virtual machine - VMware vSphere",
     "description": "This template deploys IBM DB2 Enterprise Server Edition V10.5 on a Linux virtual machine.",
-    "version": "1.0",
+    "version": "1.0.0",
     "imageUrl": "",
     "image": "",
     "type": "chefcontent",
@@ -31,7 +31,7 @@
     "description": " VMware<br>"},
 {
     "title": "Template Version",
-    "description": "1.0<br>"},
+    "description": "1.0.0<br>"},
 {
     "title": "Operating Systems Supported",
     "description": "Red Hat Enterprise Linux 7<br>Red Hat Enterprise Linux 6<br>Ubuntu 14.04 LTS<br>"},
