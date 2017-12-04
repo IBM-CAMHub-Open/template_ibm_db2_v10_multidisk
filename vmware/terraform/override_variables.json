@@ -1,0 +1,7 @@
+{
+  "storage-volume_disk_datastore": "WildManageTo",
+  "storage-volume1_disk_datastore": "WildManageTo",
+  "storage-volume2_disk_datastore": "WildManageTo",
+  "storage-volume3_disk_datastore": "WildManageTo",
+  "DB2Node01_memory": "8192"
+}
