@@ -26,12 +26,12 @@ variable "user_public_ssh_key" {
 }
 
 variable "aws_ami_owner_id" {
-  description = "The AMI Owner ID"
+  description = "AWS AMI Owner ID"
   default = "309956199498"
 }
 
 variable "aws_region" {
-  description = "The aws region"
+  description = "AWS Region Name"
   default = "us-east-1"
 }
 
@@ -47,6 +47,10 @@ provider "camc" {
   version = "~> 0.1"
 }
 
+provider "template" {
+  version = "~> 1.0"
+}
+
 provider "random" {
   version = "~> 1.0"
 }
@@ -60,7 +64,7 @@ data "aws_vpc" "selected_vpc" {
 
 #Parameter : aws_vpc_name
 variable "aws_vpc_name" {
-  description = "The name of the aws vpc"
+  description = "AWS VPC Name"
 }
 
 data "aws_security_group" "aws_sg_camc_name_selected" {
@@ -70,7 +74,7 @@ data "aws_security_group" "aws_sg_camc_name_selected" {
 
 #Parameter : aws_sg_camc_name
 variable "aws_sg_camc_name" {
-  description = "The name of the aws security group for automation content"
+  description = "AWS Security Group Name"
 }
 
 resource "random_id" "stack_id" {
@@ -85,24 +89,8 @@ variable "ibm_stack_name" {
   description = "A unique stack name."
 }
 
-#### Default OS Admin User Map ####
-variable "default_os_admin_user" {
-  type        = "map"
-  description = "look up os_admin_user using resource image"
-  default = {
-    ubuntu_images_ubuntu_xenial-16.04_099720109477 = "ubuntu"
-    RHEL-7.4_HVM_GA_309956199498                   = "ec2-user"
-  }
-}
 
 ##### DB2Node01 variables #####
-#Variable : DB2Node01-flavor
-variable "DB2Node01-flavor" {
-  type = "string"
-  description = "DB2Node01 Flavor"
-  default = "t2.small"
-}
-
 data "aws_ami" "DB2Node01_ami" {
   most_recent = true
   filter {
@@ -117,13 +105,6 @@ variable "DB2Node01-image" {
   type = "string"
   description = "Operating system image id / template that should be used when creating the virtual image"
   default = "RHEL-7.4_HVM_GA"
-}
-
-#Variable : DB2Node01-mgmt-network-public
-variable "DB2Node01-mgmt-network-public" {
-  type = "string"
-  description = "Expose and use public IP of virtual machine for internal communication"
-  default = "true"
 }
 
 #Variable : DB2Node01-name
@@ -446,7 +427,7 @@ variable "DB2Node01_linux_filesystems_filesystem1_user" {
 variable "DB2Node01_linux_filesystems_filesystem2_device" {
   type = "string"
   description = "Device to mount to, leave blank if unknown, the system will search for it."
-  default = "/dev/xvdd"
+  default = "/dev/xvdc"
 }
 
 #Variable : DB2Node01_linux_filesystems_filesystem2_force
@@ -502,7 +483,7 @@ variable "DB2Node01_linux_filesystems_filesystem2_perms" {
 variable "DB2Node01_linux_filesystems_filesystem2_size" {
   type = "string"
   description = "Size in GB of the disk"
-  default = "40"
+  default = "50"
 }
 
 #Variable : DB2Node01_linux_filesystems_filesystem2_user
@@ -516,7 +497,7 @@ variable "DB2Node01_linux_filesystems_filesystem2_user" {
 variable "DB2Node01_linux_filesystems_filesystem3_device" {
   type = "string"
   description = "Device to mount to, leave blank if unknown, the system will search for it."
-  default = "/dev/xvde"
+  default = "/dev/xvdc"
 }
 
 #Variable : DB2Node01_linux_filesystems_filesystem3_force
@@ -586,7 +567,7 @@ variable "DB2Node01_linux_filesystems_filesystem3_user" {
 variable "DB2Node01_linux_filesystems_filesystem4_device" {
   type = "string"
   description = "Device to mount to, leave blank if unknown, the system will search for it."
-  default = "/dev/xvdf"
+  default = "/dev/xvdc"
 }
 
 #Variable : DB2Node01_linux_filesystems_filesystem4_force
@@ -685,6 +666,24 @@ variable "ibm_sw_repo_user" {
   default = "repouser"
 }
 
+
+##### virtualmachine variables #####
+#Variable : DB2Node01-flavor
+variable "DB2Node01-flavor" {
+  type = "string"
+  description = "DB2Node01 Flavor"
+  default = "m3.large"
+}
+
+#Variable : DB2Node01-mgmt-network-public
+variable "DB2Node01-mgmt-network-public" {
+  type = "string"
+  description = "Expose and use public IP of virtual machine for internal communication"
+  default = "true"
+}
+
+
+##### ungrouped variables #####
 ##### domain name #####
 variable "runtime_domain" {
   description = "domain name"
@@ -714,7 +713,7 @@ variable "DB2Node01_subnet_name" {
 #Parameter : DB2Node01_associate_public_ip_address
 variable "DB2Node01_associate_public_ip_address" {
   type = "string"
-  description = "Assign a public IP"
+  description = "AWS assign a public IP to instance"
   default = "true"
 }
 
@@ -731,7 +730,7 @@ variable "DB2Node01_root_block_device_volume_type" {
 variable "DB2Node01_root_block_device_volume_size" {
   type = "string"
   description = "AWS Root Block Device Volume Size"
-  default = "25"
+  default = "100"
 }
 
 
@@ -803,7 +802,7 @@ variable "storage-volume1_ebs_block_device_volume_type" {
 variable "storage-volume1_ebs_block_device_volume_size" {
   type = "string"
   description = "AWS EBS Block Device Volume Size"
-  default = "40"
+  default = "50"
 }
 
 
@@ -915,7 +914,7 @@ resource "aws_instance" "DB2Node01" {
 
   # Specify the ssh connection
   connection {
-    user = "${var.DB2Node01-os_admin_user == "" ? lookup(var.default_os_admin_user, format("%s_%s", replace(var.DB2Node01-image, "/", "_"), var.aws_ami_owner_id)) : var.DB2Node01-os_admin_user}"
+    user = "${var.DB2Node01-os_admin_user}"
     private_key = "${base64decode(var.ibm_pm_private_ssh_key)}"
   }
 
@@ -1021,7 +1020,7 @@ data "template_cloudinit_config" "DB2Node01_init"  {
   part {
     content_type = "text/cloud-config"
     content = <<EOF
-hostname: ${var.DB2Node01-name}
+hostname: ${var.DB2Node01-name}.${var.runtime_domain}
 fqdn: ${var.DB2Node01-name}.${var.runtime_domain}
 manage_etc_hosts: false
 EOF
@@ -1041,7 +1040,7 @@ resource "camc_bootstrap" "DB2Node01_chef_bootstrap_comp" {
   trace = true
   data = <<EOT
 {
-  "os_admin_user": "${var.DB2Node01-os_admin_user == "default"? lookup(var.default_os_admin_user, format("%s_%s", replace(var.DB2Node01-image, "/", "_"), var.aws_ami_owner_id)) : var.DB2Node01-os_admin_user}",
+  "os_admin_user": "${var.DB2Node01-os_admin_user}",
   "stack_id": "${random_id.stack_id.hex}",
   "environment_name": "_default",
   "host_ip": "${var.DB2Node01-mgmt-network-public == "false" ? aws_instance.DB2Node01.private_ip : aws_instance.DB2Node01.public_ip}",
@@ -1074,7 +1073,7 @@ resource "camc_softwaredeploy" "DB2Node01_db2_create_db" {
   trace = true
   data = <<EOT
 {
-  "os_admin_user": "${var.DB2Node01-os_admin_user == "default"? lookup(var.default_os_admin_user, format("%s_%s", replace(var.DB2Node01-image, "/", "_"), var.aws_ami_owner_id)) : var.DB2Node01-os_admin_user}",
+  "os_admin_user": "${var.DB2Node01-os_admin_user}",
   "stack_id": "${random_id.stack_id.hex}",
   "environment_name": "_default",
   "host_ip": "${var.DB2Node01-mgmt-network-public == "false" ? aws_instance.DB2Node01.private_ip : aws_instance.DB2Node01.public_ip}",
@@ -1168,7 +1167,7 @@ resource "camc_softwaredeploy" "DB2Node01_db2_v105_install" {
   trace = true
   data = <<EOT
 {
-  "os_admin_user": "${var.DB2Node01-os_admin_user == "default"? lookup(var.default_os_admin_user, format("%s_%s", replace(var.DB2Node01-image, "/", "_"), var.aws_ami_owner_id)) : var.DB2Node01-os_admin_user}",
+  "os_admin_user": "${var.DB2Node01-os_admin_user}",
   "stack_id": "${random_id.stack_id.hex}",
   "environment_name": "_default",
   "host_ip": "${var.DB2Node01-mgmt-network-public == "false" ? aws_instance.DB2Node01.private_ip : aws_instance.DB2Node01.public_ip}",
@@ -1221,7 +1220,7 @@ resource "camc_softwaredeploy" "DB2Node01_linux_cloud_fs" {
   trace = true
   data = <<EOT
 {
-  "os_admin_user": "${var.DB2Node01-os_admin_user == "default"? lookup(var.default_os_admin_user, format("%s_%s", replace(var.DB2Node01-image, "/", "_"), var.aws_ami_owner_id)) : var.DB2Node01-os_admin_user}",
+  "os_admin_user": "${var.DB2Node01-os_admin_user}",
   "stack_id": "${random_id.stack_id.hex}",
   "environment_name": "_default",
   "host_ip": "${var.DB2Node01-mgmt-network-public == "false" ? aws_instance.DB2Node01.private_ip : aws_instance.DB2Node01.public_ip}",

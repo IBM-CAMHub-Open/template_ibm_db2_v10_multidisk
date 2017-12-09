@@ -12,10 +12,6 @@
       "label": "Cloud Input Variables"
     },
     {
-      "name": "virtualmachine",
-      "label": "Virtual Machine Input Variables"
-    },
-    {
       "name": "ssh_keys",
       "label": "SSH Keys"
     },
@@ -26,6 +22,14 @@
     {
       "name": "environment",
       "label": "Environment"
+    },
+    {
+      "name": "virtualmachine",
+      "label": "Virtual Machine Input Variables"
+    },
+    {
+      "name": "ungrouped",
+      "label": "ungrouped"
     }
   ],
   "output_groups": [
@@ -47,28 +51,16 @@
       "group_name": "environment"
     },
     {
-      "name": "storage-volume1_ebs_block_device_delete_on_termination",
+      "name": "aws_ami_owner_id",
       "type": "string",
-      "description": "AWS EBS Block Device Delete on Termination",
-      "default": "true",
+      "description": "AWS AMI Owner ID",
+      "default": "309956199498",
       "hidden": false,
-      "label": "AWS EBS Block Device Delete on Termination - DB2Node01",
+      "label": "AWS AMI Owner ID",
       "secured": false,
-      "options": [
-        {
-          "value": "true",
-          "label": "True",
-          "default": "true"
-        },
-        {
-          "value": "false",
-          "label": "False"
-        }
-      ],
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
     },
     {
       "name": "storage-volume3_ebs_block_device_delete_on_termination",
@@ -76,7 +68,7 @@
       "description": "AWS EBS Block Device Delete on Termination",
       "default": "true",
       "hidden": false,
-      "label": "AWS EBS Block Device Delete on Termination - DB2Node01",
+      "label": "AWS EBS Block Device Delete on Termination",
       "secured": false,
       "options": [
         {
@@ -91,8 +83,7 @@
       ],
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
     },
     {
       "name": "storage-volume2_ebs_block_device_delete_on_termination",
@@ -100,7 +91,7 @@
       "description": "AWS EBS Block Device Delete on Termination",
       "default": "true",
       "hidden": false,
-      "label": "AWS EBS Block Device Delete on Termination - DB2Node01",
+      "label": "AWS EBS Block Device Delete on Termination",
       "secured": false,
       "options": [
         {
@@ -115,8 +106,30 @@
       ],
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
+    },
+    {
+      "name": "storage-volume1_ebs_block_device_delete_on_termination",
+      "type": "string",
+      "description": "AWS EBS Block Device Delete on Termination",
+      "default": "true",
+      "hidden": false,
+      "label": "AWS EBS Block Device Delete on Termination",
+      "secured": false,
+      "options": [
+        {
+          "value": "true",
+          "label": "True",
+          "default": "true"
+        },
+        {
+          "value": "false",
+          "label": "False"
+        }
+      ],
+      "required": true,
+      "immutable": false,
+      "group_name": "cloud"
     },
     {
       "name": "storage-volume_ebs_block_device_delete_on_termination",
@@ -124,7 +137,7 @@
       "description": "AWS EBS Block Device Delete on Termination",
       "default": "true",
       "hidden": false,
-      "label": "AWS EBS Block Device Delete on Termination - DB2Node01",
+      "label": "AWS EBS Block Device Delete on Termination",
       "secured": false,
       "options": [
         {
@@ -139,8 +152,7 @@
       ],
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
     },
     {
       "name": "storage-volume3_ebs_block_device_encrypted",
@@ -148,7 +160,7 @@
       "description": "AWS EBS Block Device Encrypted",
       "default": "true",
       "hidden": false,
-      "label": "AWS EBS Block Device Encrypted - DB2Node01",
+      "label": "AWS EBS Block Device Encrypted",
       "secured": false,
       "options": [
         {
@@ -163,56 +175,7 @@
       ],
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "storage-volume2_ebs_block_device_encrypted",
-      "type": "string",
-      "description": "AWS EBS Block Device Encrypted",
-      "default": "true",
-      "hidden": false,
-      "label": "AWS EBS Block Device Encrypted - DB2Node01",
-      "secured": false,
-      "options": [
-        {
-          "value": "true",
-          "label": "True",
-          "default": "true"
-        },
-        {
-          "value": "false",
-          "label": "False"
-        }
-      ],
-      "required": true,
-      "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "storage-volume_ebs_block_device_encrypted",
-      "type": "string",
-      "description": "AWS EBS Block Device Encrypted",
-      "default": "true",
-      "hidden": false,
-      "label": "AWS EBS Block Device Encrypted - DB2Node01",
-      "secured": false,
-      "options": [
-        {
-          "value": "true",
-          "label": "True",
-          "default": "true"
-        },
-        {
-          "value": "false",
-          "label": "False"
-        }
-      ],
-      "required": true,
-      "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
     },
     {
       "name": "storage-volume1_ebs_block_device_encrypted",
@@ -220,7 +183,7 @@
       "description": "AWS EBS Block Device Encrypted",
       "default": "true",
       "hidden": false,
-      "label": "AWS EBS Block Device Encrypted - DB2Node01",
+      "label": "AWS EBS Block Device Encrypted",
       "secured": false,
       "options": [
         {
@@ -235,34 +198,53 @@
       ],
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
     },
     {
-      "name": "storage-volume_ebs_block_device_name",
+      "name": "storage-volume2_ebs_block_device_encrypted",
       "type": "string",
-      "description": "AWS EBS Block Device Name",
-      "default": "/dev/xvdc",
+      "description": "AWS EBS Block Device Encrypted",
+      "default": "true",
       "hidden": false,
-      "label": "AWS EBS Block Device Name - DB2Node01",
+      "label": "AWS EBS Block Device Encrypted",
       "secured": false,
+      "options": [
+        {
+          "value": "true",
+          "label": "True",
+          "default": "true"
+        },
+        {
+          "value": "false",
+          "label": "False"
+        }
+      ],
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
     },
     {
-      "name": "storage-volume3_ebs_block_device_name",
+      "name": "storage-volume_ebs_block_device_encrypted",
       "type": "string",
-      "description": "AWS EBS Block Device Name",
-      "default": "/dev/xvdf",
+      "description": "AWS EBS Block Device Encrypted",
+      "default": "true",
       "hidden": false,
-      "label": "AWS EBS Block Device Name - DB2Node01",
+      "label": "AWS EBS Block Device Encrypted",
       "secured": false,
+      "options": [
+        {
+          "value": "true",
+          "label": "True",
+          "default": "true"
+        },
+        {
+          "value": "false",
+          "label": "False"
+        }
+      ],
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
     },
     {
       "name": "storage-volume1_ebs_block_device_name",
@@ -270,12 +252,11 @@
       "description": "AWS EBS Block Device Name",
       "default": "/dev/xvdd",
       "hidden": false,
-      "label": "AWS EBS Block Device Name - DB2Node01",
+      "label": "AWS EBS Block Device Name",
       "secured": false,
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
     },
     {
       "name": "storage-volume2_ebs_block_device_name",
@@ -283,51 +264,47 @@
       "description": "AWS EBS Block Device Name",
       "default": "/dev/xvde",
       "hidden": false,
-      "label": "AWS EBS Block Device Name - DB2Node01",
+      "label": "AWS EBS Block Device Name",
       "secured": false,
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
     },
     {
-      "name": "storage-volume2_ebs_block_device_volume_size",
+      "name": "storage-volume_ebs_block_device_name",
       "type": "string",
-      "description": "AWS EBS Block Device Volume Size",
-      "default": 10,
+      "description": "AWS EBS Block Device Name",
+      "default": "/dev/xvdc",
       "hidden": false,
-      "label": "AWS EBS Block Device Volume Size - DB2Node01",
+      "label": "AWS EBS Block Device Name",
       "secured": false,
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
+    },
+    {
+      "name": "storage-volume3_ebs_block_device_name",
+      "type": "string",
+      "description": "AWS EBS Block Device Name",
+      "default": "/dev/xvdf",
+      "hidden": false,
+      "label": "AWS EBS Block Device Name",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "cloud"
     },
     {
       "name": "storage-volume1_ebs_block_device_volume_size",
       "type": "string",
       "description": "AWS EBS Block Device Volume Size",
-      "default": 40,
+      "default": 50,
       "hidden": false,
-      "label": "AWS EBS Block Device Volume Size - DB2Node01",
+      "label": "AWS EBS Block Device Volume Size",
       "secured": false,
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "storage-volume3_ebs_block_device_volume_size",
-      "type": "string",
-      "description": "AWS EBS Block Device Volume Size",
-      "default": 20,
-      "hidden": false,
-      "label": "AWS EBS Block Device Volume Size - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
     },
     {
       "name": "storage-volume_ebs_block_device_volume_size",
@@ -335,44 +312,35 @@
       "description": "AWS EBS Block Device Volume Size",
       "default": 10,
       "hidden": false,
-      "label": "AWS EBS Block Device Volume Size - DB2Node01",
+      "label": "AWS EBS Block Device Volume Size",
       "secured": false,
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
     },
     {
-      "name": "storage-volume3_ebs_block_device_volume_type",
+      "name": "storage-volume3_ebs_block_device_volume_size",
       "type": "string",
-      "description": "AWS EBS Block Device Volume Type",
-      "default": "gp2",
+      "description": "AWS EBS Block Device Volume Size",
+      "default": 20,
       "hidden": false,
-      "label": "AWS EBS Block Device Volume Type - DB2Node01",
+      "label": "AWS EBS Block Device Volume Size",
       "secured": false,
-      "options": [
-        {
-          "value": "gp2",
-          "label": "General Purpose SSD",
-          "default": "true"
-        },
-        {
-          "value": "io1",
-          "label": "Provisioned IOPS SSD"
-        },
-        {
-          "value": "st1",
-          "label": "Throughput Optimized HDD"
-        },
-        {
-          "value": "sc1",
-          "label": "Cold HDD"
-        }
-      ],
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
+    },
+    {
+      "name": "storage-volume2_ebs_block_device_volume_size",
+      "type": "string",
+      "description": "AWS EBS Block Device Volume Size",
+      "default": 10,
+      "hidden": false,
+      "label": "AWS EBS Block Device Volume Size",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "cloud"
     },
     {
       "name": "storage-volume_ebs_block_device_volume_type",
@@ -380,7 +348,7 @@
       "description": "AWS EBS Block Device Volume Type",
       "default": "gp2",
       "hidden": false,
-      "label": "AWS EBS Block Device Volume Type - DB2Node01",
+      "label": "AWS EBS Block Device Volume Type",
       "secured": false,
       "options": [
         {
@@ -403,8 +371,7 @@
       ],
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
     },
     {
       "name": "storage-volume1_ebs_block_device_volume_type",
@@ -412,7 +379,7 @@
       "description": "AWS EBS Block Device Volume Type",
       "default": "gp2",
       "hidden": false,
-      "label": "AWS EBS Block Device Volume Type - DB2Node01",
+      "label": "AWS EBS Block Device Volume Type",
       "secured": false,
       "options": [
         {
@@ -435,8 +402,7 @@
       ],
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
     },
     {
       "name": "storage-volume2_ebs_block_device_volume_type",
@@ -444,7 +410,7 @@
       "description": "AWS EBS Block Device Volume Type",
       "default": "gp2",
       "hidden": false,
-      "label": "AWS EBS Block Device Volume Type - DB2Node01",
+      "label": "AWS EBS Block Device Volume Type",
       "secured": false,
       "options": [
         {
@@ -467,8 +433,109 @@
       ],
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
+    },
+    {
+      "name": "storage-volume3_ebs_block_device_volume_type",
+      "type": "string",
+      "description": "AWS EBS Block Device Volume Type",
+      "default": "gp2",
+      "hidden": false,
+      "label": "AWS EBS Block Device Volume Type",
+      "secured": false,
+      "options": [
+        {
+          "value": "gp2",
+          "label": "General Purpose SSD",
+          "default": "true"
+        },
+        {
+          "value": "io1",
+          "label": "Provisioned IOPS SSD"
+        },
+        {
+          "value": "st1",
+          "label": "Throughput Optimized HDD"
+        },
+        {
+          "value": "sc1",
+          "label": "Cold HDD"
+        }
+      ],
+      "required": true,
+      "immutable": false,
+      "group_name": "cloud"
+    },
+    {
+      "name": "aws_region",
+      "type": "string",
+      "description": "AWS Region Name",
+      "default": "us-east-1",
+      "hidden": false,
+      "label": "AWS Region Name",
+      "secured": false,
+      "options": [
+        {
+          "value": "us-east-1",
+          "label": "US East (N. Virginia)",
+          "default": true
+        },
+        {
+          "value": "us-east-2",
+          "label": "US East (Ohio)"
+        },
+        {
+          "value": "us-west-1",
+          "label": "US West (N. California)"
+        },
+        {
+          "value": "us-west-2",
+          "label": "US West (Oregon)"
+        },
+        {
+          "value": "ca-central-1",
+          "label": "Canada (Central)"
+        },
+        {
+          "value": "eu-west-1",
+          "label": "EU (Ireland)"
+        },
+        {
+          "value": "eu-central-1",
+          "label": "EU (Frankfurt)"
+        },
+        {
+          "value": "eu-west-2",
+          "label": "EU (London)"
+        },
+        {
+          "value": "ap-northeast-1",
+          "label": "Asia Pacific (Tokyo)"
+        },
+        {
+          "value": "ap-northeast-2",
+          "label": "Asia Pacific (Seoul)"
+        },
+        {
+          "value": "ap-southeast-1",
+          "label": "Asia Pacific (Singapore)"
+        },
+        {
+          "value": "ap-southeast-2",
+          "label": "Asia Pacific (Sydney)"
+        },
+        {
+          "value": "ap-south-1",
+          "label": "Asia Pacific (Mumbai)"
+        },
+        {
+          "value": "sa-east-1",
+          "label": "South America (São Paulo)"
+        }
+      ],
+      "required": true,
+      "immutable": false,
+      "group_name": "cloud"
     },
     {
       "name": "DB2Node01_root_block_device_delete_on_termination",
@@ -476,7 +543,7 @@
       "description": "AWS Root Block Device Delete on Termination",
       "default": "true",
       "hidden": false,
-      "label": "AWS Root Block Device Delete on Termination - DB2Node01",
+      "label": "AWS Root Block Device Delete on Termination",
       "secured": false,
       "options": [
         {
@@ -491,21 +558,19 @@
       ],
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
     },
     {
       "name": "DB2Node01_root_block_device_volume_size",
       "type": "string",
       "description": "AWS Root Block Device Volume Size",
-      "default": 25,
+      "default": 100,
       "hidden": false,
-      "label": "AWS Root Block Device Volume Size - DB2Node01",
+      "label": "AWS Root Block Device Volume Size",
       "secured": false,
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
     },
     {
       "name": "DB2Node01_root_block_device_volume_type",
@@ -513,7 +578,7 @@
       "description": "AWS Root Block Device Volume Type",
       "default": "gp2",
       "hidden": false,
-      "label": "AWS Root Block Device Volume Type - DB2Node01",
+      "label": "AWS Root Block Device Volume Type",
       "secured": false,
       "options": [
         {
@@ -536,28 +601,48 @@
       ],
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
+    },
+    {
+      "name": "aws_sg_camc_name",
+      "type": "string",
+      "description": "AWS Security Group Name",
+      "hidden": false,
+      "label": "AWS Security Group Name",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "cloud"
     },
     {
       "name": "DB2Node01_subnet_name",
       "type": "string",
       "description": "AWS Subnet Name",
       "hidden": false,
-      "label": "AWS Subnet Name - DB2Node01",
+      "label": "AWS Subnet Name",
       "secured": false,
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
+    },
+    {
+      "name": "aws_vpc_name",
+      "type": "string",
+      "description": "AWS VPC Name",
+      "hidden": false,
+      "label": "AWS VPC Name",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "cloud"
     },
     {
       "name": "DB2Node01_associate_public_ip_address",
       "type": "string",
-      "description": "Assign a public IP",
+      "description": "AWS assign a public IP to instance",
       "default": "true",
       "hidden": false,
-      "label": "Assign a public IP - DB2Node01",
+      "label": "AWS assign a public IP to instance",
       "secured": false,
       "options": [
         {
@@ -572,8 +657,7 @@
       ],
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
     },
     {
       "name": "DB2Node01_db2_das_password",
@@ -1226,14 +1310,13 @@
       "name": "DB2Node01-flavor",
       "type": "string",
       "description": "DB2Node01 Flavor",
-      "default": "t2.small",
+      "default": "m3.large",
       "hidden": false,
       "label": "DB2Node01 Flavor",
       "secured": false,
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "virtualmachine"
     },
     {
       "name": "ibm_pm_access_token",
@@ -1330,117 +1413,12 @@
       "group_name": "virtualmachine"
     },
     {
-      "name": "aws_ami_owner_id",
-      "type": "string",
-      "description": "The AMI Owner ID",
-      "default": "309956199498",
-      "hidden": false,
-      "label": "The AMI Owner ID",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "cloud"
-    },
-    {
-      "name": "aws_region",
-      "type": "string",
-      "description": "The aws region",
-      "default": "us-east-1",
-      "hidden": false,
-      "label": "The aws region",
-      "secured": false,
-      "options": [
-        {
-          "value": "us-east-1",
-          "label": "US East (N. Virginia)",
-          "default": true
-        },
-        {
-          "value": "us-east-2",
-          "label": "US East (Ohio)"
-        },
-        {
-          "value": "us-west-1",
-          "label": "US West (N. California)"
-        },
-        {
-          "value": "us-west-2",
-          "label": "US West (Oregon)"
-        },
-        {
-          "value": "ca-central-1",
-          "label": "Canada (Central)"
-        },
-        {
-          "value": "eu-west-1",
-          "label": "EU (Ireland)"
-        },
-        {
-          "value": "eu-central-1",
-          "label": "EU (Frankfurt)"
-        },
-        {
-          "value": "eu-west-2",
-          "label": "EU (London)"
-        },
-        {
-          "value": "ap-northeast-1",
-          "label": "Asia Pacific (Tokyo)"
-        },
-        {
-          "value": "ap-northeast-2",
-          "label": "Asia Pacific (Seoul)"
-        },
-        {
-          "value": "ap-southeast-1",
-          "label": "Asia Pacific (Singapore)"
-        },
-        {
-          "value": "ap-southeast-2",
-          "label": "Asia Pacific (Sydney)"
-        },
-        {
-          "value": "ap-south-1",
-          "label": "Asia Pacific (Mumbai)"
-        },
-        {
-          "value": "sa-east-1",
-          "label": "South America (São Paulo)"
-        }
-      ],
-      "required": true,
-      "immutable": false,
-      "group_name": "cloud"
-    },
-    {
-      "name": "aws_sg_camc_name",
-      "type": "string",
-      "description": "The name of the aws security group for automation content",
-      "hidden": false,
-      "label": "The name of the aws security group for automation content",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "cloud"
-    },
-    {
-      "name": "aws_vpc_name",
-      "type": "string",
-      "description": "The name of the aws vpc",
-      "hidden": false,
-      "label": "The name of the aws vpc",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "cloud"
-    },
-    {
       "name": "DB2Node01-mgmt-network-public",
       "type": "string",
       "description": "Expose and use public IP of virtual machine for internal communication",
       "default": "true",
       "hidden": false,
-      "label": "Use Public Management Network - DB2Node01",
+      "label": "Use Public Management Network",
       "secured": false,
       "options": [
         {
@@ -1454,24 +1432,10 @@
       ],
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "virtualmachine"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem4_device",
-      "type": "string",
-      "description": "Device to mount to, leave blank if unknown, the system will search for it.",
-      "default": "/dev/xvdf",
-      "hidden": false,
-      "label": "device - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "DB2Node01_linux_filesystems_filesystem2_device",
+      "name": "DB2Node01_linux_filesystems_filesystem1_device",
       "type": "string",
       "description": "Device to mount to, leave blank if unknown, the system will search for it.",
       "default": "/dev/xvdd",
@@ -1497,10 +1461,23 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem1_device",
+      "name": "DB2Node01_linux_filesystems_filesystem2_device",
       "type": "string",
       "description": "Device to mount to, leave blank if unknown, the system will search for it.",
       "default": "/dev/xvdc",
+      "hidden": false,
+      "label": "device - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "immutable_after_create": true,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem4_device",
+      "type": "string",
+      "description": "Device to mount to, leave blank if unknown, the system will search for it.",
+      "default": "/dev/xvdf",
       "hidden": false,
       "label": "device - DB2Node01",
       "secured": false,
@@ -1520,32 +1497,6 @@
       "required": true,
       "immutable": true,
       "group_name": "cloud"
-    },
-    {
-      "name": "DB2Node01_linux_filesystems_filesystem4_force",
-      "type": "string",
-      "description": "Force the mount true or false",
-      "default": "true",
-      "hidden": false,
-      "label": "force - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "DB2Node01_linux_filesystems_filesystem3_force",
-      "type": "string",
-      "description": "Force the mount true or false",
-      "default": "true",
-      "hidden": false,
-      "label": "force - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
     },
     {
       "name": "DB2Node01_linux_filesystems_filesystem2_force",
@@ -1574,33 +1525,33 @@
       "group_name": "db2node01"
     },
     {
+      "name": "DB2Node01_linux_filesystems_filesystem4_force",
+      "type": "string",
+      "description": "Force the mount true or false",
+      "default": "true",
+      "hidden": false,
+      "label": "force - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "immutable_after_create": true,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem3_force",
+      "type": "string",
+      "description": "Force the mount true or false",
+      "default": "true",
+      "hidden": false,
+      "label": "force - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "immutable_after_create": true,
+      "group_name": "db2node01"
+    },
+    {
       "name": "DB2Node01_linux_filesystems_filesystem4_fstype",
-      "type": "string",
-      "description": "File System Type",
-      "default": "ext4",
-      "hidden": false,
-      "label": "fstype - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "DB2Node01_linux_filesystems_filesystem1_fstype",
-      "type": "string",
-      "description": "File System Type",
-      "default": "ext4",
-      "hidden": false,
-      "label": "fstype - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "DB2Node01_linux_filesystems_filesystem2_fstype",
       "type": "string",
       "description": "File System Type",
       "default": "ext4",
@@ -1626,12 +1577,12 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem4_group",
+      "name": "DB2Node01_linux_filesystems_filesystem2_fstype",
       "type": "string",
-      "description": "Group owner of the mount point",
-      "default": "default",
+      "description": "File System Type",
+      "default": "ext4",
       "hidden": false,
-      "label": "group - DB2Node01",
+      "label": "fstype - DB2Node01",
       "secured": false,
       "required": true,
       "immutable": false,
@@ -1639,7 +1590,20 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem1_group",
+      "name": "DB2Node01_linux_filesystems_filesystem1_fstype",
+      "type": "string",
+      "description": "File System Type",
+      "default": "ext4",
+      "hidden": false,
+      "label": "fstype - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "immutable_after_create": true,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem4_group",
       "type": "string",
       "description": "Group owner of the mount point",
       "default": "default",
@@ -1665,7 +1629,7 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem3_group",
+      "name": "DB2Node01_linux_filesystems_filesystem1_group",
       "type": "string",
       "description": "Group owner of the mount point",
       "default": "default",
@@ -1678,12 +1642,12 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem1_label",
+      "name": "DB2Node01_linux_filesystems_filesystem3_group",
       "type": "string",
-      "description": "Label of the file system",
-      "default": "instance",
+      "description": "Group owner of the mount point",
+      "default": "default",
       "hidden": false,
-      "label": "label - DB2Node01",
+      "label": "group - DB2Node01",
       "secured": false,
       "required": true,
       "immutable": false,
@@ -1704,10 +1668,10 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem3_label",
+      "name": "DB2Node01_linux_filesystems_filesystem1_label",
       "type": "string",
       "description": "Label of the file system",
-      "default": "actlog",
+      "default": "instance",
       "hidden": false,
       "label": "label - DB2Node01",
       "secured": false,
@@ -1730,12 +1694,12 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem1_mountpoint",
+      "name": "DB2Node01_linux_filesystems_filesystem3_label",
       "type": "string",
-      "description": "Directory to mount to, directory will be created",
-      "default": "/instance",
+      "description": "Label of the file system",
+      "default": "actlog",
       "hidden": false,
-      "label": "mountpoint - DB2Node01",
+      "label": "label - DB2Node01",
       "secured": false,
       "required": true,
       "immutable": false,
@@ -1782,12 +1746,12 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem2_options",
+      "name": "DB2Node01_linux_filesystems_filesystem1_mountpoint",
       "type": "string",
-      "description": "Advanced options for mounting the disk",
-      "default": "defaults",
+      "description": "Directory to mount to, directory will be created",
+      "default": "/instance",
       "hidden": false,
-      "label": "options - DB2Node01",
+      "label": "mountpoint - DB2Node01",
       "secured": false,
       "required": true,
       "immutable": false,
@@ -1795,7 +1759,7 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem4_options",
+      "name": "DB2Node01_linux_filesystems_filesystem1_options",
       "type": "string",
       "description": "Advanced options for mounting the disk",
       "default": "defaults",
@@ -1821,7 +1785,7 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem1_options",
+      "name": "DB2Node01_linux_filesystems_filesystem4_options",
       "type": "string",
       "description": "Advanced options for mounting the disk",
       "default": "defaults",
@@ -1834,12 +1798,12 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem2_perms",
+      "name": "DB2Node01_linux_filesystems_filesystem2_options",
       "type": "string",
-      "description": "Permissions for the mount point.",
-      "default": "default",
+      "description": "Advanced options for mounting the disk",
+      "default": "defaults",
       "hidden": false,
-      "label": "perms - DB2Node01",
+      "label": "options - DB2Node01",
       "secured": false,
       "required": true,
       "immutable": false,
@@ -1873,7 +1837,7 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem4_perms",
+      "name": "DB2Node01_linux_filesystems_filesystem2_perms",
       "type": "string",
       "description": "Permissions for the mount point.",
       "default": "default",
@@ -1886,12 +1850,12 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem2_size",
+      "name": "DB2Node01_linux_filesystems_filesystem4_perms",
       "type": "string",
-      "description": "Size in GB of the disk",
-      "default": "40",
+      "description": "Permissions for the mount point.",
+      "default": "default",
       "hidden": false,
-      "label": "size - DB2Node01",
+      "label": "perms - DB2Node01",
       "secured": false,
       "required": true,
       "immutable": false,
@@ -1925,12 +1889,38 @@
       "group_name": "db2node01"
     },
     {
+      "name": "DB2Node01_linux_filesystems_filesystem2_size",
+      "type": "string",
+      "description": "Size in GB of the disk",
+      "default": "50",
+      "hidden": false,
+      "label": "size - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "immutable_after_create": true,
+      "group_name": "db2node01"
+    },
+    {
       "name": "DB2Node01_linux_filesystems_filesystem4_size",
       "type": "string",
       "description": "Size in GB of the disk",
       "default": "20",
       "hidden": false,
       "label": "size - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "immutable_after_create": true,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem1_user",
+      "type": "string",
+      "description": "Owner of the mount point.",
+      "default": "default",
+      "hidden": false,
+      "label": "user - DB2Node01",
       "secured": false,
       "required": true,
       "immutable": false,
@@ -1952,19 +1942,6 @@
     },
     {
       "name": "DB2Node01_linux_filesystems_filesystem4_user",
-      "type": "string",
-      "description": "Owner of the mount point.",
-      "default": "default",
-      "hidden": false,
-      "label": "user - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "DB2Node01_linux_filesystems_filesystem1_user",
       "type": "string",
       "description": "Owner of the mount point.",
       "default": "default",
@@ -2023,6 +2000,7 @@
       "secured": false,
       "required": true,
       "immutable": false,
+      "immutable_after_create": true,
       "group_name": "ssh_keys"
     }
   ],

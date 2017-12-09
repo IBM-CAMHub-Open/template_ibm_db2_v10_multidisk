@@ -12,10 +12,6 @@
       "label": "Cloud Input Variables"
     },
     {
-      "name": "virtualmachine",
-      "label": "Virtual Machine Input Variables"
-    },
-    {
       "name": "ssh_keys",
       "label": "SSH Keys"
     },
@@ -26,6 +22,10 @@
     {
       "name": "environment",
       "label": "Environment"
+    },
+    {
+      "name": "virtualmachine",
+      "label": "Virtual Machine Input Variables"
     },
     {
       "name": "ungrouped",
@@ -698,442 +698,6 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_disk1_size",
-      "type": "string",
-      "description": "Disk1 - DB2Node01",
-      "default": "10",
-      "hidden": false,
-      "label": "Disk1 - DB2Node01",
-      "secured": false,
-      "options": [
-        {
-          "value": "10",
-          "label": "10 GB",
-          "default": true
-        },
-        {
-          "value": "20",
-          "label": "20 GB"
-        },
-        {
-          "value": "25",
-          "label": "25 GB"
-        },
-        {
-          "value": "50",
-          "label": "50 GB"
-        },
-        {
-          "value": "75",
-          "label": "75 GB"
-        },
-        {
-          "value": "100",
-          "label": "100 GB"
-        },
-        {
-          "value": "125",
-          "label": "125 GB"
-        },
-        {
-          "value": "150",
-          "label": "150 GB"
-        },
-        {
-          "value": "200",
-          "label": "200 GB"
-        },
-        {
-          "value": "250",
-          "label": "250 GB"
-        },
-        {
-          "value": "300",
-          "label": "300 GB"
-        },
-        {
-          "value": "350",
-          "label": "350 GB"
-        },
-        {
-          "value": "400",
-          "label": "400 GB"
-        },
-        {
-          "value": "500",
-          "label": "500 GB"
-        },
-        {
-          "value": "750",
-          "label": "750 GB"
-        },
-        {
-          "value": "1000",
-          "label": "1.0 TB"
-        },
-        {
-          "value": "1500",
-          "label": "1.5 TB"
-        },
-        {
-          "value": "2000",
-          "label": "2.0 TB"
-        }
-      ],
-      "required": true,
-      "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "DB2Node01_disk2_size",
-      "type": "string",
-      "description": "Disk2 - DB2Node01",
-      "default": "50",
-      "hidden": false,
-      "label": "Disk2 - DB2Node01",
-      "secured": false,
-      "options": [
-        {
-          "value": "10",
-          "label": "10 GB"
-        },
-        {
-          "value": "20",
-          "label": "20 GB"
-        },
-        {
-          "value": "25",
-          "label": "25 GB"
-        },
-        {
-          "value": "50",
-          "label": "50 GB",
-          "default": true
-        },
-        {
-          "value": "75",
-          "label": "75 GB"
-        },
-        {
-          "value": "100",
-          "label": "100 GB"
-        },
-        {
-          "value": "125",
-          "label": "125 GB"
-        },
-        {
-          "value": "150",
-          "label": "150 GB"
-        },
-        {
-          "value": "200",
-          "label": "200 GB"
-        },
-        {
-          "value": "250",
-          "label": "250 GB"
-        },
-        {
-          "value": "300",
-          "label": "300 GB"
-        },
-        {
-          "value": "350",
-          "label": "350 GB"
-        },
-        {
-          "value": "400",
-          "label": "400 GB"
-        },
-        {
-          "value": "500",
-          "label": "500 GB"
-        },
-        {
-          "value": "750",
-          "label": "750 GB"
-        },
-        {
-          "value": "1000",
-          "label": "1.0 TB"
-        },
-        {
-          "value": "1500",
-          "label": "1.5 TB"
-        },
-        {
-          "value": "2000",
-          "label": "2.0 TB"
-        }
-      ],
-      "required": true,
-      "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "DB2Node01_disk3_size",
-      "type": "string",
-      "description": "Disk3 - DB2Node01",
-      "default": "10",
-      "hidden": false,
-      "label": "Disk3 - DB2Node01",
-      "secured": false,
-      "options": [
-        {
-          "value": "10",
-          "label": "10 GB",
-          "default": true
-        },
-        {
-          "value": "20",
-          "label": "20 GB"
-        },
-        {
-          "value": "25",
-          "label": "25 GB"
-        },
-        {
-          "value": "50",
-          "label": "50 GB"
-        },
-        {
-          "value": "75",
-          "label": "75 GB"
-        },
-        {
-          "value": "100",
-          "label": "100 GB"
-        },
-        {
-          "value": "125",
-          "label": "125 GB"
-        },
-        {
-          "value": "150",
-          "label": "150 GB"
-        },
-        {
-          "value": "200",
-          "label": "200 GB"
-        },
-        {
-          "value": "250",
-          "label": "250 GB"
-        },
-        {
-          "value": "300",
-          "label": "300 GB"
-        },
-        {
-          "value": "350",
-          "label": "350 GB"
-        },
-        {
-          "value": "400",
-          "label": "400 GB"
-        },
-        {
-          "value": "500",
-          "label": "500 GB"
-        },
-        {
-          "value": "750",
-          "label": "750 GB"
-        },
-        {
-          "value": "1000",
-          "label": "1.0 TB"
-        },
-        {
-          "value": "1500",
-          "label": "1.5 TB"
-        },
-        {
-          "value": "2000",
-          "label": "2.0 TB"
-        }
-      ],
-      "required": true,
-      "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "DB2Node01_disk4_size",
-      "type": "string",
-      "description": "Disk4 - DB2Node01",
-      "default": "20",
-      "hidden": false,
-      "label": "Disk4 - DB2Node01",
-      "secured": false,
-      "options": [
-        {
-          "value": "10",
-          "label": "10 GB"
-        },
-        {
-          "value": "20",
-          "label": "20 GB",
-          "default": true
-        },
-        {
-          "value": "25",
-          "label": "25 GB"
-        },
-        {
-          "value": "50",
-          "label": "50 GB"
-        },
-        {
-          "value": "75",
-          "label": "75 GB"
-        },
-        {
-          "value": "100",
-          "label": "100 GB"
-        },
-        {
-          "value": "125",
-          "label": "125 GB"
-        },
-        {
-          "value": "150",
-          "label": "150 GB"
-        },
-        {
-          "value": "200",
-          "label": "200 GB"
-        },
-        {
-          "value": "250",
-          "label": "250 GB"
-        },
-        {
-          "value": "300",
-          "label": "300 GB"
-        },
-        {
-          "value": "350",
-          "label": "350 GB"
-        },
-        {
-          "value": "400",
-          "label": "400 GB"
-        },
-        {
-          "value": "500",
-          "label": "500 GB"
-        },
-        {
-          "value": "750",
-          "label": "750 GB"
-        },
-        {
-          "value": "1000",
-          "label": "1.0 TB"
-        },
-        {
-          "value": "1500",
-          "label": "1.5 TB"
-        },
-        {
-          "value": "2000",
-          "label": "2.0 TB"
-        }
-      ],
-      "required": true,
-      "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "ibm_pm_access_token",
-      "type": "string",
-      "description": "IBM Pattern Manager Access Token",
-      "hidden": true,
-      "label": "IBM Pattern Manager Access Token",
-      "secured": true,
-      "required": true,
-      "immutable": true,
-      "group_name": "environment",
-      "default": "${advanced_content_runtime_chef.ibm_pm_access_token}"
-    },
-    {
-      "name": "ibm_pm_service",
-      "type": "string",
-      "description": "IBM Pattern Manager Service",
-      "hidden": true,
-      "label": "IBM Pattern Manager Service",
-      "secured": false,
-      "required": true,
-      "immutable": true,
-      "group_name": "environment",
-      "default": "${advanced_content_runtime_chef.ibm_pm_service}"
-    },
-    {
-      "name": "ibm_sw_repo_password",
-      "type": "string",
-      "description": "IBM Software Repo Password",
-      "hidden": true,
-      "label": "IBM Software Repo Password",
-      "secured": true,
-      "required": true,
-      "immutable": true,
-      "group_name": "environment",
-      "default": "${advanced_content_runtime_chef.ibm_sw_repo_password}"
-    },
-    {
-      "name": "ibm_sw_repo",
-      "type": "string",
-      "description": "IBM Software Repo Root (https://<hostname>:<port>)",
-      "hidden": true,
-      "label": "IBM Software Repo Root",
-      "secured": false,
-      "required": true,
-      "immutable": true,
-      "group_name": "environment",
-      "default": "${advanced_content_runtime_chef.ibm_sw_repo}"
-    },
-    {
-      "name": "ibm_sw_repo_user",
-      "type": "string",
-      "description": "IBM Software Repo Username",
-      "default": "${advanced_content_runtime_chef.ibm_sw_repo_user}",
-      "hidden": true,
-      "label": "IBM Software Repo Username",
-      "secured": false,
-      "required": true,
-      "immutable": true,
-      "group_name": "environment"
-    },
-    {
-      "name": "DB2Node01_local_disk",
-      "type": "string",
-      "description": "User local disk or SAN disk",
-      "default": "false",
-      "hidden": false,
-      "label": "IBMCloud - Local / SAN Disk - DB2Node01",
-      "secured": false,
-      "options": [
-        {
-          "value": "true",
-          "label": "True"
-        },
-        {
-          "value": "false",
-          "label": "False",
-          "default": "true"
-        }
-      ],
-      "required": true,
-      "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
-    },
-    {
       "name": "DB2Node01_datacenter",
       "type": "string",
       "description": "IBMCloud datacenter where infrastructure resources will be deployed",
@@ -1270,8 +834,7 @@
       ],
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
     },
     {
       "name": "DB2Node01_dedicated_acct_host_only",
@@ -1294,8 +857,7 @@
       ],
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
     },
     {
       "name": "DB2Node01_hourly_billing",
@@ -1318,8 +880,7 @@
       ],
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
     },
     {
       "name": "DB2Node01_network_speed",
@@ -1342,8 +903,7 @@
       ],
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
     },
     {
       "name": "DB2Node01_private_network_only",
@@ -1366,8 +926,7 @@
       ],
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
     },
     {
       "name": "DB2Node01_memory",
@@ -1410,8 +969,7 @@
       ],
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
     },
     {
       "name": "DB2Node01_number_of_cores",
@@ -1454,8 +1012,7 @@
       ],
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
     },
     {
       "name": "DB2Node01-image",
@@ -1491,18 +1048,17 @@
       "options": [
         {
           "value": "25",
-          "label": "25 GB",
-          "default": true
+          "label": "25 GB"
         },
         {
           "value": "100",
-          "label": "100 GB"
+          "label": "100 GB",
+          "default": true
         }
       ],
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
+      "group_name": "cloud"
     },
     {
       "name": "DB2Node01-name",
@@ -1513,33 +1069,11 @@
       "secured": false,
       "required": true,
       "immutable": false,
+      "immutable_after_create": true,
       "group_name": "virtualmachine"
     },
     {
-      "name": "DB2Node01-mgmt-network-public",
-      "type": "string",
-      "description": "Expose and use public IP of virtual machine for internal communication",
-      "default": "true",
-      "hidden": false,
-      "label": "Use Public Management Network - DB2Node01",
-      "secured": false,
-      "options": [
-        {
-          "value": false,
-          "label": false
-        },
-        {
-          "value": true,
-          "label": true
-        }
-      ],
-      "required": true,
-      "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "DB2Node01_linux_filesystems_filesystem2_device",
+      "name": "DB2Node01_linux_filesystems_filesystem4_device",
       "type": "string",
       "description": "Device to mount to, leave blank if unknown, the system will search for it.",
       "default": "/dev/xvdd",
@@ -1552,10 +1086,10 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem4_device",
+      "name": "DB2Node01_linux_filesystems_filesystem1_device",
       "type": "string",
       "description": "Device to mount to, leave blank if unknown, the system will search for it.",
-      "default": "/dev/xvdf",
+      "default": "/dev/xvde",
       "hidden": false,
       "label": "device - DB2Node01",
       "secured": false,
@@ -1565,7 +1099,7 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem1_device",
+      "name": "DB2Node01_linux_filesystems_filesystem2_device",
       "type": "string",
       "description": "Device to mount to, leave blank if unknown, the system will search for it.",
       "default": "/dev/xvdc",
@@ -1581,7 +1115,7 @@
       "name": "DB2Node01_linux_filesystems_filesystem3_device",
       "type": "string",
       "description": "Device to mount to, leave blank if unknown, the system will search for it.",
-      "default": "/dev/xvde",
+      "default": "/dev/xvdf",
       "hidden": false,
       "label": "device - DB2Node01",
       "secured": false,
@@ -1591,45 +1125,7 @@
       "group_name": "db2node01"
     },
     {
-      "name": "runtime_domain",
-      "type": "string",
-      "description": "domain name",
-      "default": "${advanced_content_runtime_chef.runtime_domain}",
-      "hidden": true,
-      "label": "domain name",
-      "secured": false,
-      "required": true,
-      "immutable": true,
-      "group_name": "cloud"
-    },
-    {
-      "name": "DB2Node01_linux_filesystems_filesystem1_force",
-      "type": "string",
-      "description": "Force the mount true or false",
-      "default": "true",
-      "hidden": false,
-      "label": "force - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
-    },
-    {
       "name": "DB2Node01_linux_filesystems_filesystem2_force",
-      "type": "string",
-      "description": "Force the mount true or false",
-      "default": "true",
-      "hidden": false,
-      "label": "force - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "DB2Node01_linux_filesystems_filesystem4_force",
       "type": "string",
       "description": "Force the mount true or false",
       "default": "true",
@@ -1655,12 +1151,12 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem3_fstype",
+      "name": "DB2Node01_linux_filesystems_filesystem4_force",
       "type": "string",
-      "description": "File System Type",
-      "default": "ext4",
+      "description": "Force the mount true or false",
+      "default": "true",
       "hidden": false,
-      "label": "fstype - DB2Node01",
+      "label": "force - DB2Node01",
       "secured": false,
       "required": true,
       "immutable": false,
@@ -1668,12 +1164,12 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem2_fstype",
+      "name": "DB2Node01_linux_filesystems_filesystem1_force",
       "type": "string",
-      "description": "File System Type",
-      "default": "ext4",
+      "description": "Force the mount true or false",
+      "default": "true",
       "hidden": false,
-      "label": "fstype - DB2Node01",
+      "label": "force - DB2Node01",
       "secured": false,
       "required": true,
       "immutable": false,
@@ -1707,12 +1203,12 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem4_group",
+      "name": "DB2Node01_linux_filesystems_filesystem3_fstype",
       "type": "string",
-      "description": "Group owner of the mount point",
-      "default": "default",
+      "description": "File System Type",
+      "default": "ext4",
       "hidden": false,
-      "label": "group - DB2Node01",
+      "label": "fstype - DB2Node01",
       "secured": false,
       "required": true,
       "immutable": false,
@@ -1720,7 +1216,20 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem1_group",
+      "name": "DB2Node01_linux_filesystems_filesystem2_fstype",
+      "type": "string",
+      "description": "File System Type",
+      "default": "ext4",
+      "hidden": false,
+      "label": "fstype - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "immutable_after_create": true,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem4_group",
       "type": "string",
       "description": "Group owner of the mount point",
       "default": "default",
@@ -1746,12 +1255,51 @@
       "group_name": "db2node01"
     },
     {
+      "name": "DB2Node01_linux_filesystems_filesystem1_group",
+      "type": "string",
+      "description": "Group owner of the mount point",
+      "default": "default",
+      "hidden": false,
+      "label": "group - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "immutable_after_create": true,
+      "group_name": "db2node01"
+    },
+    {
       "name": "DB2Node01_linux_filesystems_filesystem3_group",
       "type": "string",
       "description": "Group owner of the mount point",
       "default": "default",
       "hidden": false,
       "label": "group - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "immutable_after_create": true,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem4_label",
+      "type": "string",
+      "description": "Label of the file system",
+      "default": "archive",
+      "hidden": false,
+      "label": "label - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "immutable_after_create": true,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem2_label",
+      "type": "string",
+      "description": "Label of the file system",
+      "default": "data",
+      "hidden": false,
+      "label": "label - DB2Node01",
       "secured": false,
       "required": true,
       "immutable": false,
@@ -1785,25 +1333,12 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem2_label",
+      "name": "DB2Node01_linux_filesystems_filesystem1_mountpoint",
       "type": "string",
-      "description": "Label of the file system",
-      "default": "data",
+      "description": "Directory to mount to, directory will be created",
+      "default": "/instance",
       "hidden": false,
-      "label": "label - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "DB2Node01_linux_filesystems_filesystem4_label",
-      "type": "string",
-      "description": "Label of the file system",
-      "default": "archive",
-      "hidden": false,
-      "label": "label - DB2Node01",
+      "label": "mountpoint - DB2Node01",
       "secured": false,
       "required": true,
       "immutable": false,
@@ -1815,19 +1350,6 @@
       "type": "string",
       "description": "Directory to mount to, directory will be created",
       "default": "/database/actlog",
-      "hidden": false,
-      "label": "mountpoint - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "DB2Node01_linux_filesystems_filesystem4_mountpoint",
-      "type": "string",
-      "description": "Directory to mount to, directory will be created",
-      "default": "/database/archive",
       "hidden": false,
       "label": "mountpoint - DB2Node01",
       "secured": false,
@@ -1850,25 +1372,12 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem1_mountpoint",
+      "name": "DB2Node01_linux_filesystems_filesystem4_mountpoint",
       "type": "string",
       "description": "Directory to mount to, directory will be created",
-      "default": "/instance",
+      "default": "/database/archive",
       "hidden": false,
       "label": "mountpoint - DB2Node01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "immutable_after_create": true,
-      "group_name": "db2node01"
-    },
-    {
-      "name": "DB2Node01_linux_filesystems_filesystem1_options",
-      "type": "string",
-      "description": "Advanced options for mounting the disk",
-      "default": "defaults",
-      "hidden": false,
-      "label": "options - DB2Node01",
       "secured": false,
       "required": true,
       "immutable": false,
@@ -1889,7 +1398,7 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem4_options",
+      "name": "DB2Node01_linux_filesystems_filesystem1_options",
       "type": "string",
       "description": "Advanced options for mounting the disk",
       "default": "defaults",
@@ -1915,7 +1424,20 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem4_perms",
+      "name": "DB2Node01_linux_filesystems_filesystem4_options",
+      "type": "string",
+      "description": "Advanced options for mounting the disk",
+      "default": "defaults",
+      "hidden": false,
+      "label": "options - DB2Node01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "immutable_after_create": true,
+      "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_linux_filesystems_filesystem1_perms",
       "type": "string",
       "description": "Permissions for the mount point.",
       "default": "default",
@@ -1928,7 +1450,7 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem3_perms",
+      "name": "DB2Node01_linux_filesystems_filesystem4_perms",
       "type": "string",
       "description": "Permissions for the mount point.",
       "default": "default",
@@ -1954,7 +1476,7 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem1_perms",
+      "name": "DB2Node01_linux_filesystems_filesystem3_perms",
       "type": "string",
       "description": "Permissions for the mount point.",
       "default": "default",
@@ -1980,10 +1502,10 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem3_size",
+      "name": "DB2Node01_linux_filesystems_filesystem4_size",
       "type": "string",
       "description": "Size in GB of the disk",
-      "default": "10",
+      "default": "20",
       "hidden": false,
       "label": "size - DB2Node01",
       "secured": false,
@@ -1993,10 +1515,10 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem4_size",
+      "name": "DB2Node01_linux_filesystems_filesystem3_size",
       "type": "string",
       "description": "Size in GB of the disk",
-      "default": "20",
+      "default": "10",
       "hidden": false,
       "label": "size - DB2Node01",
       "secured": false,
@@ -2032,7 +1554,7 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem3_user",
+      "name": "DB2Node01_linux_filesystems_filesystem2_user",
       "type": "string",
       "description": "Owner of the mount point.",
       "default": "default",
@@ -2045,7 +1567,7 @@
       "group_name": "db2node01"
     },
     {
-      "name": "DB2Node01_linux_filesystems_filesystem2_user",
+      "name": "DB2Node01_linux_filesystems_filesystem3_user",
       "type": "string",
       "description": "Owner of the mount point.",
       "default": "default",
@@ -2069,6 +1591,437 @@
       "immutable": false,
       "immutable_after_create": true,
       "group_name": "db2node01"
+    },
+    {
+      "name": "DB2Node01_disk1_size",
+      "type": "string",
+      "description": "Disk1 - DB2Node01 Size",
+      "default": "10",
+      "hidden": false,
+      "label": "Disk1 - DB2Node01 Size",
+      "secured": false,
+      "options": [
+        {
+          "value": "10",
+          "label": "10 GB",
+          "default": true
+        },
+        {
+          "value": "20",
+          "label": "20 GB"
+        },
+        {
+          "value": "25",
+          "label": "25 GB"
+        },
+        {
+          "value": "50",
+          "label": "50 GB"
+        },
+        {
+          "value": "75",
+          "label": "75 GB"
+        },
+        {
+          "value": "100",
+          "label": "100 GB"
+        },
+        {
+          "value": "125",
+          "label": "125 GB"
+        },
+        {
+          "value": "150",
+          "label": "150 GB"
+        },
+        {
+          "value": "200",
+          "label": "200 GB"
+        },
+        {
+          "value": "250",
+          "label": "250 GB"
+        },
+        {
+          "value": "300",
+          "label": "300 GB"
+        },
+        {
+          "value": "350",
+          "label": "350 GB"
+        },
+        {
+          "value": "400",
+          "label": "400 GB"
+        },
+        {
+          "value": "500",
+          "label": "500 GB"
+        },
+        {
+          "value": "750",
+          "label": "750 GB"
+        },
+        {
+          "value": "1000",
+          "label": "1.0 TB"
+        },
+        {
+          "value": "1500",
+          "label": "1.5 TB"
+        },
+        {
+          "value": "2000",
+          "label": "2.0 TB"
+        }
+      ],
+      "required": true,
+      "immutable": false,
+      "group_name": "virtualmachine"
+    },
+    {
+      "name": "DB2Node01_disk2_size",
+      "type": "string",
+      "description": "Disk2 - DB2Node01 Size",
+      "default": "50",
+      "hidden": false,
+      "label": "Disk2 - DB2Node01 Size",
+      "secured": false,
+      "options": [
+        {
+          "value": "10",
+          "label": "10 GB"
+        },
+        {
+          "value": "20",
+          "label": "20 GB"
+        },
+        {
+          "value": "25",
+          "label": "25 GB"
+        },
+        {
+          "value": "50",
+          "label": "50 GB",
+          "default": true
+        },
+        {
+          "value": "75",
+          "label": "75 GB"
+        },
+        {
+          "value": "100",
+          "label": "100 GB"
+        },
+        {
+          "value": "125",
+          "label": "125 GB"
+        },
+        {
+          "value": "150",
+          "label": "150 GB"
+        },
+        {
+          "value": "200",
+          "label": "200 GB"
+        },
+        {
+          "value": "250",
+          "label": "250 GB"
+        },
+        {
+          "value": "300",
+          "label": "300 GB"
+        },
+        {
+          "value": "350",
+          "label": "350 GB"
+        },
+        {
+          "value": "400",
+          "label": "400 GB"
+        },
+        {
+          "value": "500",
+          "label": "500 GB"
+        },
+        {
+          "value": "750",
+          "label": "750 GB"
+        },
+        {
+          "value": "1000",
+          "label": "1.0 TB"
+        },
+        {
+          "value": "1500",
+          "label": "1.5 TB"
+        },
+        {
+          "value": "2000",
+          "label": "2.0 TB"
+        }
+      ],
+      "required": true,
+      "immutable": false,
+      "group_name": "virtualmachine"
+    },
+    {
+      "name": "DB2Node01_disk3_size",
+      "type": "string",
+      "description": "Disk3 - DB2Node01 Size",
+      "default": "10",
+      "hidden": false,
+      "label": "Disk3 - DB2Node01 Size",
+      "secured": false,
+      "options": [
+        {
+          "value": "10",
+          "label": "10 GB",
+          "default": true
+        },
+        {
+          "value": "20",
+          "label": "20 GB"
+        },
+        {
+          "value": "25",
+          "label": "25 GB"
+        },
+        {
+          "value": "50",
+          "label": "50 GB"
+        },
+        {
+          "value": "75",
+          "label": "75 GB"
+        },
+        {
+          "value": "100",
+          "label": "100 GB"
+        },
+        {
+          "value": "125",
+          "label": "125 GB"
+        },
+        {
+          "value": "150",
+          "label": "150 GB"
+        },
+        {
+          "value": "200",
+          "label": "200 GB"
+        },
+        {
+          "value": "250",
+          "label": "250 GB"
+        },
+        {
+          "value": "300",
+          "label": "300 GB"
+        },
+        {
+          "value": "350",
+          "label": "350 GB"
+        },
+        {
+          "value": "400",
+          "label": "400 GB"
+        },
+        {
+          "value": "500",
+          "label": "500 GB"
+        },
+        {
+          "value": "750",
+          "label": "750 GB"
+        },
+        {
+          "value": "1000",
+          "label": "1.0 TB"
+        },
+        {
+          "value": "1500",
+          "label": "1.5 TB"
+        },
+        {
+          "value": "2000",
+          "label": "2.0 TB"
+        }
+      ],
+      "required": true,
+      "immutable": false,
+      "group_name": "virtualmachine"
+    },
+    {
+      "name": "DB2Node01_disk4_size",
+      "type": "string",
+      "description": "Disk4 - DB2Node01 Size",
+      "default": "20",
+      "hidden": false,
+      "label": "Disk4 - DB2Node01 Size",
+      "secured": false,
+      "options": [
+        {
+          "value": "10",
+          "label": "10 GB"
+        },
+        {
+          "value": "20",
+          "label": "20 GB",
+          "default": true
+        },
+        {
+          "value": "25",
+          "label": "25 GB"
+        },
+        {
+          "value": "50",
+          "label": "50 GB"
+        },
+        {
+          "value": "75",
+          "label": "75 GB"
+        },
+        {
+          "value": "100",
+          "label": "100 GB"
+        },
+        {
+          "value": "125",
+          "label": "125 GB"
+        },
+        {
+          "value": "150",
+          "label": "150 GB"
+        },
+        {
+          "value": "200",
+          "label": "200 GB"
+        },
+        {
+          "value": "250",
+          "label": "250 GB"
+        },
+        {
+          "value": "300",
+          "label": "300 GB"
+        },
+        {
+          "value": "350",
+          "label": "350 GB"
+        },
+        {
+          "value": "400",
+          "label": "400 GB"
+        },
+        {
+          "value": "500",
+          "label": "500 GB"
+        },
+        {
+          "value": "750",
+          "label": "750 GB"
+        },
+        {
+          "value": "1000",
+          "label": "1.0 TB"
+        },
+        {
+          "value": "1500",
+          "label": "1.5 TB"
+        },
+        {
+          "value": "2000",
+          "label": "2.0 TB"
+        }
+      ],
+      "required": true,
+      "immutable": false,
+      "group_name": "virtualmachine"
+    },
+    {
+      "name": "ibm_pm_access_token",
+      "type": "string",
+      "description": "IBM Pattern Manager Access Token",
+      "hidden": true,
+      "label": "IBM Pattern Manager Access Token",
+      "secured": true,
+      "required": true,
+      "immutable": true,
+      "group_name": "environment",
+      "default": "${advanced_content_runtime_chef.ibm_pm_access_token}"
+    },
+    {
+      "name": "ibm_pm_service",
+      "type": "string",
+      "description": "IBM Pattern Manager Service",
+      "hidden": true,
+      "label": "IBM Pattern Manager Service",
+      "secured": false,
+      "required": true,
+      "immutable": true,
+      "group_name": "environment",
+      "default": "${advanced_content_runtime_chef.ibm_pm_service}"
+    },
+    {
+      "name": "ibm_sw_repo_password",
+      "type": "string",
+      "description": "IBM Software Repo Password",
+      "hidden": true,
+      "label": "IBM Software Repo Password",
+      "secured": true,
+      "required": true,
+      "immutable": true,
+      "group_name": "environment",
+      "default": "${advanced_content_runtime_chef.ibm_sw_repo_password}"
+    },
+    {
+      "name": "ibm_sw_repo",
+      "type": "string",
+      "description": "IBM Software Repo Root (https://<hostname>:<port>)",
+      "hidden": true,
+      "label": "IBM Software Repo Root",
+      "secured": false,
+      "required": true,
+      "immutable": true,
+      "group_name": "environment",
+      "default": "${advanced_content_runtime_chef.ibm_sw_repo}"
+    },
+    {
+      "name": "ibm_sw_repo_user",
+      "type": "string",
+      "description": "IBM Software Repo Username",
+      "default": "${advanced_content_runtime_chef.ibm_sw_repo_user}",
+      "hidden": true,
+      "label": "IBM Software Repo Username",
+      "secured": false,
+      "required": true,
+      "immutable": true,
+      "group_name": "environment"
+    },
+    {
+      "name": "DB2Node01_local_disk",
+      "type": "string",
+      "description": "User local disk or SAN disk",
+      "default": "false",
+      "hidden": false,
+      "label": "IBMCloud - Local / SAN Disk - DB2Node01",
+      "secured": false,
+      "options": [
+        {
+          "value": "true",
+          "label": "True"
+        },
+        {
+          "value": "false",
+          "label": "False",
+          "default": "true"
+        }
+      ],
+      "required": true,
+      "immutable": false,
+      "group_name": "cloud"
     },
     {
       "name": "ibm_pm_private_ssh_key",
@@ -2095,6 +2048,28 @@
       "default": "${advanced_content_runtime_chef.ibm_pm_public_ssh_key_name}"
     },
     {
+      "name": "DB2Node01-mgmt-network-public",
+      "type": "string",
+      "description": "Expose and use public IP of virtual machine for internal communication",
+      "default": "true",
+      "hidden": false,
+      "label": "Use Public Management Network",
+      "secured": false,
+      "options": [
+        {
+          "value": false,
+          "label": false
+        },
+        {
+          "value": true,
+          "label": true
+        }
+      ],
+      "required": true,
+      "immutable": false,
+      "group_name": "virtualmachine"
+    },
+    {
       "name": "user_public_ssh_key",
       "type": "string",
       "description": "User defined public SSH key used to connect to the virtual machine. The format must be in openSSH.",
@@ -2104,7 +2079,20 @@
       "secured": false,
       "required": true,
       "immutable": false,
+      "immutable_after_create": true,
       "group_name": "ssh_keys"
+    },
+    {
+      "name": "runtime_domain",
+      "type": "string",
+      "description": "domain name",
+      "default": "${advanced_content_runtime_chef.runtime_domain}",
+      "hidden": true,
+      "label": "domain name",
+      "secured": false,
+      "required": true,
+      "immutable": true,
+      "group_name": "cloud"
     }
   ],
   "template_output_params": [
