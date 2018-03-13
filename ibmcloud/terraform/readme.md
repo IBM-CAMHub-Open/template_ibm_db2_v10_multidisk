@@ -1,5 +1,5 @@
 # Template - IBM DB2 Enterprise Server Edition V10.5 multiple disks on a single virtual machine
-Template Version - 1.0
+Template Version - 2.0
 
 ## Description
 
@@ -11,10 +11,6 @@ This template deploys IBM DB2 Enterprise Server Edition V10.5 on a Linux virtual
 
  IBM<br>
 <br>
-### Template Version
-
-1.0<br>
-<br>
 ### Operating Systems Supported
 
 Red Hat Enterprise Linux 7<br>
@@ -24,8 +20,7 @@ Ubuntu 14.04 LTS<br>
 ### Topology
 
 1 virtual machine:<br>
-  IBM DB2 Enterprise Server Edition V10.5<br>
-    db2 instance 1, 1 database<br>
+  IBM DB2 Enterprise Server Edition - one instance, one database<br>
 <br>
 ### Software Deployed
 
@@ -33,14 +28,15 @@ IBM DB2 Enterprise Server Edition V10.5<br>
 <br>
 ### Default Virtual Machine Settings
 
- Cores 2, RAM (GB) 4, SAN Disk (GB) 25<br>
+ Cores 2, RAM (GB) 4, SAN Disk (GB) 100<br>
 <br>
 ### Usage and Special Notes
 
 1. The user is responsible for obtaining appropriate software licenses and downloads prior to template deployment.<br>
 2. Detailed system requirements for DB2 V10.5 - <a href=\"https://www.ibm.com/software/reports/compatibility/clarity/index.html\" target=\"_blank\">https://www.ibm.com/software/reports/compatibility/clarity/index.html</a><br>
-3. IBM Knowledge Center for DB2 V10.5 - <a href=\"https://www.ibm.com/support/knowledgecenter/en/SSEPGG_10.5.0\" target=\"_blank\">https://www.ibm.com/support/knowledgecenter/en/SSEPGG_10.5.0</a><br>
-4. IBM Support Portal - <a href=\"https://www.ibm.com/support/home/\" target=\"_blank\">https://www.ibm.com/support/home/</a><br>
+3. Recommended Fix Packs for DB2 - <a href=\"http://www-01.ibm.com/support/docview.wss?uid=swg21321001\" target=\"_blank\">http://www-01.ibm.com/support/docview.wss?uid=swg21321001</a><br>
+4. IBM Knowledge Center for DB2 V10.5 - <a href=\"https://www.ibm.com/support/knowledgecenter/en/SSEPGG_10.5.0\" target=\"_blank\">https://www.ibm.com/support/knowledgecenter/en/SSEPGG_10.5.0</a><br>
+5. IBM Support Portal - <a href=\"https://www.ibm.com/support/home/\" target=\"_blank\">https://www.ibm.com/support/home/</a><br>
 <br>
 
 
@@ -48,7 +44,7 @@ IBM DB2 Enterprise Server Edition V10.5<br>
 
 ### License and Maintainer
 
-Copyright IBM Corp. 2016, 2017 
+Copyright IBM Corp. 2017, 2018 
 
 ### Target Cloud Type
 
@@ -68,8 +64,8 @@ IBM
 ### Minor Versions
 
 - IBM DB2 Enterprise Server 10.5.0.3
-- IBM DB2 Enterprise Server 10.5.0.8
-- IBM DB2 Enterprise Server 11.1.0.0
+- IBM DB2 Enterprise Server 10.5.0.9
+- IBM DB2 Enterprise Server 11.1.2.2
 
 
 *Note, these represent base versions only, explicit fixpacks may also be added.*
@@ -104,13 +100,13 @@ The following table describes the nodes and relevant software component deployed
   </tr>
   <tr>
     <td>DB2Node01</code></td>
-    <td>db2_v105_install</code></td>
-    <td>DB2 v10.5 role for default installation and configuration</code></td>
+    <td>db2_create_db</code></td>
+    <td>Creates a new DB2 instance and database over an existing DB2 installation</code></td>
   </tr>
   <tr>
     <td>DB2Node01</code></td>
-    <td>db2_create_db</code></td>
-    <td>Creates a new DB2 instance and database over an existing DB2 installation</code></td>
+    <td>db2_v105_install</code></td>
+    <td>DB2 v10.5 role for default installation and configuration</code></td>
   </tr>
 </table>
 
@@ -258,7 +254,7 @@ The following files are neccessary on the Software Repository to successfully in
     <td>10</td>
     <td>X86_64</td>
     <td>/db2/v105/base</td>
-    <td><br>DB2_Svr_10.5.0.0_Linux_linuxx64.tar.gz</br></td>
+    <td><br>DB2_Svr_10.5.0.8_Linux_linuxx64.tar.gz</br></td>
   </tr>
 </table>
 
@@ -271,16 +267,16 @@ The following files are neccessary on the Software Repository to successfully in
     <th>File</th>
   </tr>
   <tr>
-    <td>10.5.0.3</td>
+    <td>10.5.0.9</td>
     <td>X86_64</td>
     <td>/db2/v105/maint</td>
-    <td><br>DB2_Svr_10.5.0.3_Linux_linuxx64.tar.gz</br></td>
+    <td><br>DB2_Svr_10.5.0.9_Linux_linuxx64.tar.gz</br></td>
   </tr>
   <tr>
     <td>11.1</td>
     <td>X86_64</td>
     <td>/db2/v111/base</td>
-    <td><br>DB2_Svr_11.1.0.0_Linux_linuxx64.tar.gz</br></td>
+    <td><br>DB2_Svr_11.1.2.2_Linux_linuxx64.tar.gz</br></td>
   </tr>
 </table>
 

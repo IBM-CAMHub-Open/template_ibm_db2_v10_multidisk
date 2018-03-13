@@ -1,11 +1,11 @@
 {
-  "input_namespaces": [
+  "input_datatypes": [
     {
       "name": "advanced_content_runtime_chef",
       "label": "Advanced Content Runtime"
     }
   ],
-  "output_namespace": "content_template_output",
+  "output_datatype": "content_template_output",
   "input_groups": [
     {
       "name": "cloud",
@@ -26,10 +26,6 @@
     {
       "name": "virtualmachine",
       "label": "Virtual Machine Input Variables"
-    },
-    {
-      "name": "ungrouped",
-      "label": "ungrouped"
     }
   ],
   "output_groups": [
@@ -39,6 +35,17 @@
     }
   ],
   "template_input_params": [
+    {
+      "name": "ibm_stack_id",
+      "type": "string",
+      "description": "A unique stack id.",
+      "hidden": true,
+      "label": "A unique stack id.",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "environment"
+    },
     {
       "name": "ibm_stack_name",
       "type": "string",
@@ -57,11 +64,11 @@
       "hidden": false,
       "label": "DB2 DAS user password - DB2Node01",
       "secured": true,
-      "regex": "^[!-~]{8,32}$",
-      "regexdesc": "Allow 8 to 32 printable ASCII characters except space.",
       "required": true,
       "immutable": false,
       "immutable_after_create": true,
+      "regex": "^[!-~]{8,32}$",
+      "regexdesc": "Allow 8 to 32 printable ASCII characters except space.",
       "group_name": "db2node01"
     },
     {
@@ -72,11 +79,11 @@
       "hidden": false,
       "label": "DB2 DAS username - DB2Node01",
       "secured": false,
-      "regex": "^(?(?=(users|admins|guests|public|local))((users|local)[0-9a-z_]{1,3}|(admins|guests|public)[0-9a-z_]{1,2})|(?!(ibm|sys|sql|dbm))[a-z_][0-9a-z_]{0,7})$",
-      "regexdesc": "Allow 1 to 8 lower-case letters, digits and _(underscore) for names (1) not same as users, admins, guests, public, local and any SQL reserved words; (2) not starting with digits and special words as ibm, sys, sql and dbm.",
       "required": true,
       "immutable": false,
       "immutable_after_create": true,
+      "regex": "^(?(?=(users|admins|guests|public|local))((users|local)[0-9a-z_]{1,3}|(admins|guests|public)[0-9a-z_]{1,2})|(?!(ibm|sys|sql|dbm))[a-z_][0-9a-z_]{0,7})$",
+      "regexdesc": "Allow 1 to 8 lower-case letters, digits and _(underscore) for names (1) not same as users, admins, guests, public, local and any SQL reserved words; (2) not starting with digits and special words as ibm, sys, sql and dbm.",
       "group_name": "db2node01"
     },
     {
@@ -87,11 +94,11 @@
       "hidden": true,
       "label": "DB2 FCM port - DB2Node01",
       "secured": false,
-      "regex": "^6[0-9]{3}[0-8]$",
-      "regexdesc": "Allow a number between 60000 and 69998.",
       "required": true,
       "immutable": false,
       "immutable_after_create": true,
+      "regex": "^6[0-9]{3}[0-8]$",
+      "regexdesc": "Allow a number between 60000 and 69998.",
       "group_name": "db2node01"
     },
     {
@@ -134,11 +141,11 @@
       "hidden": false,
       "label": "DB2 codeset - DB2Node01",
       "secured": false,
-      "regex": "^IBM-([0-9]{2,4}|euc(CN|JP|KR|TW))$|^(ISO[-]?8859-|iso8859)(1|2|5|6|7|8|9|15)$|^(UTF-8|roman8|125[0-8]|737|5601|1363|KOI8(-R|-U|-RU)?|GB(K|18030)|gb2312|hp15CN|euc(CN|JP|KR|TW)|EUC-(JP|KR)|BIG5|big5|Big5-HKSCS|SJIS|cns11643|TIS620-1|tis620)$",
-      "regexdesc": "Allow codesets defined in https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.admin.nls.doc/doc/r0004565.html.",
       "required": true,
       "immutable": false,
       "immutable_after_create": true,
+      "regex": "^IBM-([0-9]{2,4}|euc(CN|JP|KR|TW))$|^(ISO[-]?8859-|iso8859)(1|2|5|6|7|8|9|15)$|^(UTF-8|roman8|125[0-8]|737|5601|1363|KOI8(-R|-U|-RU)?|GB(K|18030)|gb2312|hp15CN|euc(CN|JP|KR|TW)|EUC-(JP|KR)|BIG5|big5|Big5-HKSCS|SJIS|cns11643|TIS620-1|tis620)$",
+      "regexdesc": "Allow codesets defined in https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.admin.nls.doc/doc/r0004565.html.",
       "group_name": "db2node01"
     },
     {
@@ -185,11 +192,11 @@
       "hidden": false,
       "label": "DB2 connection port - DB2Node01",
       "secured": false,
-      "regex": "^5[0-9]{4}$",
-      "regexdesc": "Allow a number between 50000 and 59999.",
       "required": true,
       "immutable": false,
       "immutable_after_create": true,
+      "regex": "^5[0-9]{4}$",
+      "regexdesc": "Allow a number between 50000 and 59999.",
       "group_name": "db2node01"
     },
     {
@@ -200,11 +207,11 @@
       "hidden": false,
       "label": "DB2 database data path - DB2Node01",
       "secured": false,
-      "regex": "^/[ -~]*$",
-      "regexdesc": "Allow a string that starts with slash.",
       "required": true,
       "immutable": false,
       "immutable_after_create": true,
+      "regex": "^/[ -~]*$",
+      "regexdesc": "Allow a string that starts with slash.",
       "group_name": "db2node01"
     },
     {
@@ -215,11 +222,11 @@
       "hidden": true,
       "label": "DB2 database log path - DB2Node01",
       "secured": false,
-      "regex": "^(default|\\/[ -~]*)$",
-      "regexdesc": "Allow default or a string that starts with slash.",
       "required": true,
       "immutable": false,
       "immutable_after_create": true,
+      "regex": "^(default|\\/[ -~]*)$",
+      "regexdesc": "Allow default or a string that starts with slash.",
       "group_name": "db2node01"
     },
     {
@@ -230,11 +237,11 @@
       "hidden": false,
       "label": "DB2 database name - DB2Node01",
       "secured": false,
-      "regex": "^(?!([sS][yY][sS]|[iI][bB][mM]|[dD][bB][mM]))[A-Za-z][0-9A-Za-z]{0,7}$",
-      "regexdesc": "Allow 1 to 8 alphanumeric characters starting withnot a number or the letter sequences SYS, DBM, or IBM.",
       "required": true,
       "immutable": false,
       "immutable_after_create": true,
+      "regex": "^(?!([sS][yY][sS]|[iI][bB][mM]|[dD][bB][mM]))[A-Za-z][0-9A-Za-z]{0,7}$",
+      "regexdesc": "Allow 1 to 8 alphanumeric characters starting withnot a number or the letter sequences SYS, DBM, or IBM.",
       "group_name": "db2node01"
     },
     {
@@ -245,11 +252,11 @@
       "hidden": false,
       "label": "DB2 database path - DB2Node01",
       "secured": false,
-      "regex": "^/[ -~]*$",
-      "regexdesc": "Allow a string that starts with slash.",
       "required": true,
       "immutable": false,
       "immutable_after_create": true,
+      "regex": "^/[ -~]*$",
+      "regexdesc": "Allow a string that starts with slash.",
       "group_name": "db2node01"
     },
     {
@@ -332,11 +339,11 @@
       "hidden": false,
       "label": "DB2 database user group name - DB2Node01",
       "secured": false,
-      "regex": "^(?(?=(users|admins|guests|public|local))((users|local)[0-9a-z_]{1,27}|(admins|guests|public)[0-9a-z_]{1,26})|(?!(ibm|sys|sql))[a-z_][0-9a-z_]{0,31})$",
-      "regexdesc": "Allow 1 to 32 lower-case letters, digits and _(underscore) for names (1) not same as users, admins, guests, public, local and any SQL reserved words; (2) not starting with digits and special words as ibm, sys, and sql.",
       "required": true,
       "immutable": false,
       "immutable_after_create": true,
+      "regex": "^(?(?=(users|admins|guests|public|local))((users|local)[0-9a-z_]{1,27}|(admins|guests|public)[0-9a-z_]{1,26})|(?!(ibm|sys|sql))[a-z_][0-9a-z_]{0,31})$",
+      "regexdesc": "Allow 1 to 32 lower-case letters, digits and _(underscore) for names (1) not same as users, admins, guests, public, local and any SQL reserved words; (2) not starting with digits and special words as ibm, sys, and sql.",
       "group_name": "db2node01"
     },
     {
@@ -360,11 +367,11 @@
       "hidden": false,
       "label": "DB2 database user name - DB2Node01",
       "secured": false,
-      "regex": "^(?(?=(users|admins|guests|public|local))((users|local)[0-9a-z_]{1,3}|(admins|guests|public)[0-9a-z_]{1,2})|(?!(ibm|sys|sql|dbm))[a-z_][0-9a-z_]{0,7})$",
-      "regexdesc": "Allow 1 to 8 lower-case letters, digits and _(underscore) for names (1) not same as users, admins, guests, public, local and any SQL reserved words; (2) not starting with digits and special words as ibm, sys, sql and dbm.",
       "required": true,
       "immutable": false,
       "immutable_after_create": true,
+      "regex": "^(?(?=(users|admins|guests|public|local))((users|local)[0-9a-z_]{1,3}|(admins|guests|public)[0-9a-z_]{1,2})|(?!(ibm|sys|sql|dbm))[a-z_][0-9a-z_]{0,7})$",
+      "regexdesc": "Allow 1 to 8 lower-case letters, digits and _(underscore) for names (1) not same as users, admins, guests, public, local and any SQL reserved words; (2) not starting with digits and special words as ibm, sys, sql and dbm.",
       "group_name": "db2node01"
     },
     {
@@ -374,11 +381,11 @@
       "hidden": false,
       "label": "DB2 database user password - DB2Node01",
       "secured": true,
-      "regex": "^[!-~]{8,32}$",
-      "regexdesc": "Allow 8 to 32 printable ASCII characters except space.",
       "required": true,
       "immutable": false,
       "immutable_after_create": true,
+      "regex": "^[!-~]{8,32}$",
+      "regexdesc": "Allow 8 to 32 printable ASCII characters except space.",
       "group_name": "db2node01"
     },
     {
@@ -389,11 +396,11 @@
       "hidden": true,
       "label": "DB2 failover log archive path - DB2Node01",
       "secured": false,
-      "regex": "^(default|\\/[ -~]*)$",
-      "regexdesc": "Allow default or a string that starts with slash.",
       "required": true,
       "immutable": false,
       "immutable_after_create": true,
+      "regex": "^(default|\\/[ -~]*)$",
+      "regexdesc": "Allow default or a string that starts with slash.",
       "group_name": "db2node01"
     },
     {
@@ -404,11 +411,11 @@
       "hidden": false,
       "label": "DB2 fenced group name - DB2Node01",
       "secured": false,
-      "regex": "^(?(?=(users|admins|guests|public|local))((users|local)[0-9a-z_]{1,27}|(admins|guests|public)[0-9a-z_]{1,26})|(?!(ibm|sys|sql))[a-z_][0-9a-z_]{0,31})$",
-      "regexdesc": "Allow 1 to 32 lower-case letters, digits and _(underscore) for names (1) not same as users, admins, guests, public, local and any SQL reserved words; (2) not starting with digits and special words as ibm, sys, and sql.",
       "required": true,
       "immutable": false,
       "immutable_after_create": true,
+      "regex": "^(?(?=(users|admins|guests|public|local))((users|local)[0-9a-z_]{1,27}|(admins|guests|public)[0-9a-z_]{1,26})|(?!(ibm|sys|sql))[a-z_][0-9a-z_]{0,31})$",
+      "regexdesc": "Allow 1 to 32 lower-case letters, digits and _(underscore) for names (1) not same as users, admins, guests, public, local and any SQL reserved words; (2) not starting with digits and special words as ibm, sys, and sql.",
       "group_name": "db2node01"
     },
     {
@@ -418,11 +425,11 @@
       "hidden": false,
       "label": "DB2 fenced user password - DB2Node01",
       "secured": true,
-      "regex": "^[!-~]{8,32}$",
-      "regexdesc": "Allow 8 to 32 printable ASCII characters except space.",
       "required": true,
       "immutable": false,
       "immutable_after_create": true,
+      "regex": "^[!-~]{8,32}$",
+      "regexdesc": "Allow 8 to 32 printable ASCII characters except space.",
       "group_name": "db2node01"
     },
     {
@@ -433,18 +440,18 @@
       "hidden": false,
       "label": "DB2 fenced username - DB2Node01",
       "secured": false,
-      "regex": "^(?(?=(users|admins|guests|public|local))((users|local)[0-9a-z_]{1,3}|(admins|guests|public)[0-9a-z_]{1,2})|(?!(ibm|sys|sql|dbm))[a-z_][0-9a-z_]{0,7})$",
-      "regexdesc": "Allow 1 to 8 lower-case letters, digits and _(underscore) for names (1) not same as users, admins, guests, public, local and any SQL reserved words; (2) not starting with digits and special words as ibm, sys, sql and dbm.",
       "required": true,
       "immutable": false,
       "immutable_after_create": true,
+      "regex": "^(?(?=(users|admins|guests|public|local))((users|local)[0-9a-z_]{1,3}|(admins|guests|public)[0-9a-z_]{1,2})|(?!(ibm|sys|sql|dbm))[a-z_][0-9a-z_]{0,7})$",
+      "regexdesc": "Allow 1 to 8 lower-case letters, digits and _(underscore) for names (1) not same as users, admins, guests, public, local and any SQL reserved words; (2) not starting with digits and special words as ibm, sys, sql and dbm.",
       "group_name": "db2node01"
     },
     {
       "name": "DB2Node01_db2_fp_version",
       "type": "string",
       "description": "The version of DB2 fix pack to install. If no fix pack is required, set this value the same as DB2 base version.",
-      "default": "10.5.0.8",
+      "default": "10.5.0.9",
       "hidden": false,
       "label": "DB2 fix pack version - DB2Node01",
       "secured": false,
@@ -474,11 +481,11 @@
       "hidden": false,
       "label": "DB2 instance directory - DB2Node01",
       "secured": false,
-      "regex": "^/[ -~]*$",
-      "regexdesc": "Allow default or a string that starts with slash.",
       "required": true,
       "immutable": false,
       "immutable_after_create": true,
+      "regex": "^/[ -~]*$",
+      "regexdesc": "Allow default or a string that starts with slash.",
       "group_name": "db2node01"
     },
     {
@@ -489,11 +496,11 @@
       "hidden": false,
       "label": "DB2 instance group name - DB2Node01",
       "secured": false,
-      "regex": "^(?(?=(users|admins|guests|public|local))((users|local)[0-9a-z_]{1,27}|(admins|guests|public)[0-9a-z_]{1,26})|(?!(ibm|sys|sql))[a-z_][0-9a-z_]{0,31})$",
-      "regexdesc": "Allow 1 to 32 lower-case letters, digits and _(underscore) for names (1) not same as users, admins, guests, public, local and any SQL reserved words; (2) not starting with digits and special words as ibm, sys, and sql.",
       "required": true,
       "immutable": false,
       "immutable_after_create": true,
+      "regex": "^(?(?=(users|admins|guests|public|local))((users|local)[0-9a-z_]{1,27}|(admins|guests|public)[0-9a-z_]{1,26})|(?!(ibm|sys|sql))[a-z_][0-9a-z_]{0,31})$",
+      "regexdesc": "Allow 1 to 32 lower-case letters, digits and _(underscore) for names (1) not same as users, admins, guests, public, local and any SQL reserved words; (2) not starting with digits and special words as ibm, sys, and sql.",
       "group_name": "db2node01"
     },
     {
@@ -504,11 +511,11 @@
       "hidden": true,
       "label": "DB2 instance prefix - DB2Node01",
       "secured": false,
-      "regex": "^(?!([sS][yY][sS]|[iI][bB][mM]|[dD][bB][mM]))[A-Za-z][0-9A-Za-z]{0,7}$",
-      "regexdesc": "Allow 1 to 8 alphanumeric characters starting withnot a number or the letter sequences SYS, DBM, or IBM.",
       "required": true,
       "immutable": false,
       "immutable_after_create": true,
+      "regex": "^(?!([sS][yY][sS]|[iI][bB][mM]|[dD][bB][mM]))[A-Za-z][0-9A-Za-z]{0,7}$",
+      "regexdesc": "Allow 1 to 8 alphanumeric characters starting withnot a number or the letter sequences SYS, DBM, or IBM.",
       "group_name": "db2node01"
     },
     {
@@ -554,11 +561,11 @@
       "hidden": false,
       "label": "DB2 instance user password - DB2Node01",
       "secured": true,
-      "regex": "^[!-~]{8,32}$",
-      "regexdesc": "Allow 8 to 32 printable ASCII characters except space.",
       "required": true,
       "immutable": false,
       "immutable_after_create": true,
+      "regex": "^[!-~]{8,32}$",
+      "regexdesc": "Allow 8 to 32 printable ASCII characters except space.",
       "group_name": "db2node01"
     },
     {
@@ -569,11 +576,11 @@
       "hidden": false,
       "label": "DB2 instance username - DB2Node01",
       "secured": false,
-      "regex": "^(?(?=(users|admins|guests|public|local))((users|local)[0-9a-z_]{1,3}|(admins|guests|public)[0-9a-z_]{1,2})|(?!(ibm|sys|sql|dbm))[a-z_][0-9a-z_]{0,7})$",
-      "regexdesc": "Allow 1 to 8 lower-case letters, digits and _(underscore) for names (1) not same as users, admins, guests, public, local and any SQL reserved words; (2) not starting with digits and special words as ibm, sys, sql and dbm.",
       "required": true,
       "immutable": false,
       "immutable_after_create": true,
+      "regex": "^(?(?=(users|admins|guests|public|local))((users|local)[0-9a-z_]{1,3}|(admins|guests|public)[0-9a-z_]{1,2})|(?!(ibm|sys|sql|dbm))[a-z_][0-9a-z_]{0,7})$",
+      "regexdesc": "Allow 1 to 8 lower-case letters, digits and _(underscore) for names (1) not same as users, admins, guests, public, local and any SQL reserved words; (2) not starting with digits and special words as ibm, sys, sql and dbm.",
       "group_name": "db2node01"
     },
     {
@@ -584,11 +591,11 @@
       "hidden": true,
       "label": "DB2 log file size - DB2Node01",
       "secured": false,
-      "regex": "^([4-9]|[1-9][0-9]{1,6}|1[0-5][0-9]{6}|16[0-6][0-9]{5}|167[0-6][0-9]{4}|1677[0-6][0-9]{3}|167770[0-9]{2}|167771[0-4][0-9]|1677715[0-2]|default)$",
-      "regexdesc": "Allow a number between 4 and 16777152 or using default.",
       "required": true,
       "immutable": false,
       "immutable_after_create": true,
+      "regex": "^([4-9]|[1-9][0-9]{1,6}|1[0-5][0-9]{6}|16[0-6][0-9]{5}|167[0-6][0-9]{4}|1677[0-6][0-9]{3}|167770[0-9]{2}|167771[0-4][0-9]|1677715[0-2]|default)$",
+      "regexdesc": "Allow a number between 4 and 16777152 or using default.",
       "group_name": "db2node01"
     },
     {
@@ -675,11 +682,11 @@
       "hidden": true,
       "label": "DB2 secondary log files - DB2Node01",
       "secured": false,
-      "regex": "^(-1|[0-9]|1[0-9]{1,2}|2[0-4][0-9]|25[0-4]|default)$",
-      "regexdesc": "Allow a number between -1 and 254 or using default.",
       "required": true,
       "immutable": false,
       "immutable_after_create": true,
+      "regex": "^(-1|[0-9]|1[0-9]{1,2}|2[0-4][0-9]|25[0-4]|default)$",
+      "regexdesc": "Allow a number between -1 and 254 or using default.",
       "group_name": "db2node01"
     },
     {
@@ -690,11 +697,11 @@
       "hidden": false,
       "label": "DB2 territory - DB2Node01",
       "secured": false,
-      "regex": "^[A-Z]{2}$|^Lat$",
-      "regexdesc": "Allow two upper-case letters and a special case (Lat) as defined in https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.admin.nls.doc/doc/r0004565.html.",
       "required": true,
       "immutable": false,
       "immutable_after_create": true,
+      "regex": "^[A-Z]{2}$|^Lat$",
+      "regexdesc": "Allow two upper-case letters and a special case (Lat) as defined in https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.admin.nls.doc/doc/r0004565.html.",
       "group_name": "db2node01"
     },
     {
@@ -1041,7 +1048,7 @@
       "name": "DB2Node01_root_disk_size",
       "type": "string",
       "description": "Root Disk Size - DB2Node01",
-      "default": "25",
+      "default": "100",
       "hidden": false,
       "label": "Root Disk Size - DB2Node01",
       "secured": false,
@@ -1069,14 +1076,13 @@
       "secured": false,
       "required": true,
       "immutable": false,
-      "immutable_after_create": true,
       "group_name": "virtualmachine"
     },
     {
       "name": "DB2Node01_linux_filesystems_filesystem4_device",
       "type": "string",
       "description": "Device to mount to, leave blank if unknown, the system will search for it.",
-      "default": "/dev/xvdd",
+      "default": "/dev/xvdf",
       "hidden": false,
       "label": "Disk 4 device - DB2Node01",
       "secured": false,
@@ -1089,7 +1095,7 @@
       "name": "DB2Node01_linux_filesystems_filesystem1_device",
       "type": "string",
       "description": "Device to mount to, leave blank if unknown, the system will search for it.",
-      "default": "/dev/xvde",
+      "default": "/dev/xvdc",
       "hidden": false,
       "label": "Disk 1 device - DB2Node01",
       "secured": false,
@@ -1102,7 +1108,7 @@
       "name": "DB2Node01_linux_filesystems_filesystem2_device",
       "type": "string",
       "description": "Device to mount to, leave blank if unknown, the system will search for it.",
-      "default": "/dev/xvdc",
+      "default": "/dev/xvdd",
       "hidden": false,
       "label": "Disk 2 device - DB2Node01",
       "secured": false,
@@ -1115,7 +1121,7 @@
       "name": "DB2Node01_linux_filesystems_filesystem3_device",
       "type": "string",
       "description": "Device to mount to, leave blank if unknown, the system will search for it.",
-      "default": "/dev/xvdf",
+      "default": "/dev/xvde",
       "hidden": false,
       "label": "Disk 3 device - DB2Node01",
       "secured": false,
@@ -1595,10 +1601,10 @@
     {
       "name": "DB2Node01_disk1_size",
       "type": "string",
-      "description": "Disk 1 - DB2Node01 Size",
+      "description": "Disk1 - DB2Node01 Size",
       "default": "10",
       "hidden": false,
-      "label": "Disk 1 - DB2Node01 Size",
+      "label": "Disk1 - DB2Node01 Size",
       "secured": false,
       "options": [
         {
@@ -1682,10 +1688,10 @@
     {
       "name": "DB2Node01_disk2_size",
       "type": "string",
-      "description": "Disk 2 - DB2Node01 Size",
+      "description": "Disk2 - DB2Node01 Size",
       "default": "50",
       "hidden": false,
-      "label": "Disk 2 - DB2Node01 Size",
+      "label": "Disk2 - DB2Node01 Size",
       "secured": false,
       "options": [
         {
@@ -1769,10 +1775,10 @@
     {
       "name": "DB2Node01_disk3_size",
       "type": "string",
-      "description": "Disk 3 - DB2Node01 Size",
+      "description": "Disk3 - DB2Node01 Size",
       "default": "10",
       "hidden": false,
-      "label": "Disk 3 - DB2Node01 Size",
+      "label": "Disk3 - DB2Node01 Size",
       "secured": false,
       "options": [
         {
@@ -1856,10 +1862,10 @@
     {
       "name": "DB2Node01_disk4_size",
       "type": "string",
-      "description": "Disk 4 - DB2Node01 Size",
+      "description": "Disk4 - DB2Node01 Size",
       "default": "20",
       "hidden": false,
-      "label": "Disk 4 - DB2Node01 Size",
+      "label": "Disk4 - DB2Node01 Size",
       "secured": false,
       "options": [
         {
@@ -1973,6 +1979,7 @@
       "secured": true,
       "required": true,
       "immutable": true,
+      "immutable_after_create": true,
       "group_name": "environment",
       "default": "${advanced_content_runtime_chef.ibm_sw_repo_password}"
     },
@@ -1985,6 +1992,7 @@
       "secured": false,
       "required": true,
       "immutable": true,
+      "immutable_after_create": true,
       "group_name": "environment",
       "default": "${advanced_content_runtime_chef.ibm_sw_repo}"
     },
@@ -1998,6 +2006,7 @@
       "secured": false,
       "required": true,
       "immutable": true,
+      "immutable_after_create": true,
       "group_name": "environment"
     },
     {
