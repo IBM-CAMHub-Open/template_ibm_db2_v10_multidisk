@@ -71,7 +71,7 @@
     },
     {
       "name": "DB2Node01_db2_das_password",
-      "type": "string",
+      "type": "password",
       "description": "DB2 Administration Server (DAS) password",
       "hidden": false,
       "label": "DB2 DAS user password - DB2Node01",
@@ -388,7 +388,7 @@
     },
     {
       "name": "DB2Node01_db2_instances_instance1_databases_database1_database_users_db_user1_user_password",
-      "type": "string",
+      "type": "password",
       "description": "The password for the database user name.",
       "hidden": false,
       "label": "DB2 database user password - DB2Node01",
@@ -432,7 +432,7 @@
     },
     {
       "name": "DB2Node01_db2_instances_instance1_fenced_password",
-      "type": "string",
+      "type": "password",
       "description": "The password for the DB2 fenced username.",
       "hidden": false,
       "label": "DB2 fenced user password - DB2Node01",
@@ -568,7 +568,7 @@
     },
     {
       "name": "DB2Node01_db2_instances_instance1_instance_password",
-      "type": "string",
+      "type": "password",
       "description": "The password for the DB2 instance username.",
       "hidden": false,
       "label": "DB2 instance user password - DB2Node01",
@@ -1030,7 +1030,7 @@
     },
     {
       "name": "ibm_sw_repo_password",
-      "type": "string",
+      "type": "password",
       "description": "IBM Software Repo Password",
       "hidden": true,
       "label": "IBM Software Repo Password",
@@ -1091,7 +1091,7 @@
     },
     {
       "name": "DB2Node01-os_password",
-      "type": "string",
+      "type": "password",
       "description": "Operating System Password for the Operating System User to access virtual machine",
       "hidden": false,
       "label": "Operating system password - DB2Node01",
