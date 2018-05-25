@@ -1423,6 +1423,17 @@
       "group_name": "virtualmachine"
     },
     {
+      "name": "runtime_domain",
+      "type": "string",
+      "description": "Virtual Machine Domain Name",
+      "hidden": false,
+      "label": "Virtual machine Domain Name",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "virtualmachine"
+    },
+    {
       "name": "DB2Node01-mgmt-network-public",
       "type": "string",
       "description": "Expose and use public IP of virtual machine for internal communication",
@@ -1495,18 +1506,6 @@
       "immutable": false,
       "immutable_after_create": true,
       "group_name": "db2node01"
-    },
-    {
-      "name": "runtime_domain",
-      "type": "string",
-      "description": "domain name",
-      "default": "${advanced_content_runtime_chef.runtime_domain}",
-      "hidden": true,
-      "label": "domain name",
-      "secured": false,
-      "required": true,
-      "immutable": true,
-      "group_name": "cloud"
     },
     {
       "name": "DB2Node01_linux_filesystems_filesystem2_force",
