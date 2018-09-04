@@ -1,5 +1,5 @@
 # Template - IBM DB2 Enterprise Server Edition V10.5 multiple disks on a single virtual machine
-Template Version - 2.0
+Template Version - 2.1
 
 ## Description
 
