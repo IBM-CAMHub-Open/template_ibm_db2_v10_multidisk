@@ -31,10 +31,10 @@
     "description": " VMware<br>"},
 {
     "title": "Operating Systems Supported",
-    "description": "Red Hat Enterprise Linux 7<br>Red Hat Enterprise Linux 6<br>Ubuntu 14.04 LTS<br>"},
+    "description": "<ul><li>Red Hat Enterprise Linux 7</li><li>Red Hat Enterprise Linux 6</li><li>Ubuntu 14.04 LTS</li></ul>"},
 {
     "title": "Topology",
-    "description": "1 virtual machine:<br>  IBM DB2 Enterprise Server Edition - one instance, one database<br>"},
+    "description": "<ul><li>1 virtual machine:</li><li>IBM DB2 Enterprise Server Edition - one instance, one database</li></ul>"},
 {
     "title": "Software Deployed",
     "description": "IBM DB2 Enterprise Server Edition V10.5<br>"},
@@ -43,7 +43,7 @@
     "description": " vCPU 2, Memory (GB) 4, Disk (GB) 100<br>"},
 {
     "title": "Usage and Special Notes",
-    "description": "1. The user is responsible for obtaining appropriate software licenses and downloads prior to template deployment.<br>2. Detailed system requirements for DB2 V10.5 - <a href=\"https://www.ibm.com/software/reports/compatibility/clarity/index.html\" target=\"_blank\">https://www.ibm.com/software/reports/compatibility/clarity/index.html</a><br>3. Recommended Fix Packs for DB2 - <a href=\"http://www-01.ibm.com/support/docview.wss?uid=swg21321001\" target=\"_blank\">http://www-01.ibm.com/support/docview.wss?uid=swg21321001</a><br>4. IBM Knowledge Center for DB2 V10.5 - <a href=\"https://www.ibm.com/support/knowledgecenter/en/SSEPGG_10.5.0\" target=\"_blank\">https://www.ibm.com/support/knowledgecenter/en/SSEPGG_10.5.0</a><br>5. IBM Support Portal - <a href=\"https://www.ibm.com/support/home/\" target=\"_blank\">https://www.ibm.com/support/home/</a><br>"}
+    "description": "<ol class=\"list-numbering\"><li>The user is responsible for obtaining appropriate software licenses and downloads prior to template deployment.</li><li>Detailed system requirements for DB2 V10.5 - <a href=\"https://www.ibm.com/software/reports/compatibility/clarity/index.html\" target=\"_blank\">https://www.ibm.com/software/reports/compatibility/clarity/index.html</a></li><li>Recommended Fix Packs for DB2 - <a href=\"http://www-01.ibm.com/support/docview.wss?uid=swg21321001\" target=\"_blank\">http://www-01.ibm.com/support/docview.wss?uid=swg21321001</a></li><li>IBM Knowledge Center for DB2 V10.5 - <a href=\"https://www.ibm.com/support/knowledgecenter/en/SSEPGG_10.5.0\" target=\"_blank\">https://www.ibm.com/support/knowledgecenter/en/SSEPGG_10.5.0</a></li><li>IBM Support Portal - <a href=\"https://www.ibm.com/support/home/\" target=\"_blank\">https://www.ibm.com/support/home/</a></li></ol>"}
 ],
       "featuredImageUrl": "",
       "imageUrl": "",
