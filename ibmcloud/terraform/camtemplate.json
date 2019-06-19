@@ -23,7 +23,6 @@
       }
     },
     "metadata": {
-      "displayName": "IBM DB2 Enterprise Server Edition V10.5 multiple disks on a single virtual machine",
       "providerDisplayName": "IBM",
       "longDescription": "This template deploys IBM DB2 Enterprise Server Edition V10.5 on a Linux virtual machine.",
       "bullets": [{
